@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- FORMULAIRE STAND -->
+<html lang="fr">
+    <head>
+        <!-- Titre de la page -->
+        <title>Ajouter un stand</title>
+        <!-- Encodage -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header></header>
+        <!-- titre du formulaire -->
+        <h1>Ajouter un stand</h1>
+        <!-- Formulaire -->
+        <form method="post" action="mailto:">
+            <div class="row g-3">
+                <!-- Nom -->
+                <div class="col-md-4">
+                    <label for="inputname" class="form-label">Nom du stand</label>
+                    <input type="text" class="form-control" placeholder="Stand" aria-label="Nom">
+                </div>
+                <!-- Type -->
+                <div class="col-md-4">
+                    <label for="selecttype" class="form-label">Type de stand</label>
+                    <select class="form-select" aria-label="selecttype">
+                        <option selected disabled>Selectionner le type</option>
+                        <option value="1">Textile</option>
+                        <option value="2">Sculpture</option>
+                        <option value="3">Travail du bois et des plantes</option>
+                        <option value="4"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="row g-3">
+                <!-- Coordonnées Y -->
+                <div class="col-md-4">
+                    <label for="inputloc" class="form-label">Coordonnées Y</label>
+                    <input type="number" class="form-control" placeholder="15.0000" id="inputloc">
+                </div>
+                <!-- Coordonnées X -->
+                <div class="col-md-4">
+                    <label for="inputloc2" class="form-label">Coordonnées X</label>
+                    <input type="number" class="form-control" placeholder="15.0000" id="inputloc2">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <label for="floatingTextarea">Description du stand</label>
+                    <textarea class="form-control" placeholder="Decrivez le stand ici" id="floatingTextarea"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <label for="formFile" class="form-label">Photo du stand</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label for="horairestand">Horaire d'ouverture</label>
+                    <input type="time" class="form-control" id="horairestand">
+                </div>
+                <div class="col-md-4">
+                    <label for="horairestand2">Horaire de fermeture</label>
+                    <input type="time" class="form-control" id="horairestand2">
+                </div>
+                <div class="col-md-4">
+                    <label for="selectemplacement" class="form-label">Emplacement</label>
+                    <select class="form-select" aria-label="selectemplacement">
+                        <option selected disabled>Selectionner l'emplacement</option>
+                        <option value="1">Couvert</option>
+                        <option value="2">Exterieur</option>
+                        <option value="3">Blabla</option>
+                        <option value="4"></option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </div>
+        </form>
+    </body>
+</html>
