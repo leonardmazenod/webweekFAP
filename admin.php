@@ -1,3 +1,12 @@
+<?php
+$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+$requete="SELECT * FROM admin";
+$resultats=$connection->query($requete);
+$tab=$resultats->fetchAll();
+$resultats->closeCursor();
+$nbadmin=count($tab);
+?>
+
 <!DOCTYPE html>
 <!-- PAGE DE LOGIN ADMIN -->
 <html lang="fr">
@@ -18,12 +27,25 @@
             <div class="row g-3">
                 <div class="col-md-3">
                   <label for="inputlogin" class="form-label">Login</label>
-                  <input type="text" class="form-control" name="login" id="inputlogin">
+                  <select name="login" required=required id="pet-select">
+                    <?php echo'<option disabled=disabled>Choisir un profil admin</option>'; ?>
+                    <?php 
+                    for ($i=0;$i<$nbadmin;$i++){
+                        echo'<option value="'.$tab[$i]['id_admin'].'">'.$tab[$i]['login'].'</option>'; 
+                    }
+                    ?>
+                </select>
                 </div>
                 <div class="col-md-3">
                   <label for="inputPassword4" class="form-label">Mot de passe</label>
                   <input type="password" class="form-control" name="password" id="inputPassword4">
                 </div>
+
+                <?php // Message d'erreur dans le cas ou l'on met un mauvais mot de passe
+                if (isset($_GET['error'])){ //mettre le message en rouge 
+                    echo'<div>mot de passe incorrecte</div>'; 
+                }
+                ?>
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>

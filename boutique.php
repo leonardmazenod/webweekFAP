@@ -13,7 +13,7 @@
         <header></header>
         <!-- titre du formulaire -->
         <h1>Ajouter une boutique</h1>
-        <!-- Formulaire -->
+        <!-- Formulaire  -->
         <form method="post" action="mailto:">
             <div class="row g-3">
                 <!-- Nom -->

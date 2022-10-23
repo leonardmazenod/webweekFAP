@@ -1,14 +1,97 @@
 <?php
 $connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
-$requete="SELECT * FROM `admin`";
+// Requete SQL pour recupérer les inaations sur les administrateurs
+$requete="SELECT * FROM admin"; 
 $resultats=$connection->query($requete);
-$tab=$resultats->fetch();
+$tab=$resultats->fetchAll();
 $resultats->closeCursor();
+$nbadmin=count($tab);
 
-echo "hello";
+// Requete SQL pour recupérer les inaations sur les Stands
+$requete="SELECT id_stand,nomstand,typestand FROM stand";
+$resultats=$connection->query($requete);
+$tab_stand=$resultats->fetchAll();
+$resultats->closeCursor();
+$nbstand=count($tab_stand);
 
+// Requete SQL pour recupérer les inaations sur les Boutiques
+$requete="SELECT id_boutique,nomboutique,typeboutique FROM boutique";
+$resultats=$connection->query($requete);
+$tab_boutique=$resultats->fetchAll();
+$resultats->closeCursor();
+$nbboutique=count($tab_boutique);
 
-
-
-
+// Requete SQL pour recupérer les inaations sur les événements
+$requete="SELECT id_event,nomevent FROM evenement";
+$resultats=$connection->query($requete);
+$tab_event=$resultats->fetchAll();
+$resultats->closeCursor();
+$nbevent=count($tab_event);
 ?>
+
+<!DOCTYPE html>
+<!-- PAGE DE CONNEXTION ADMIN -->
+<html lang="fr">
+    <head>
+        <!-- Titre de la page -->
+        <title>Admin connect</title>
+        <!-- Encodage -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+	<body>
+	<?php
+	$login=$_POST['login']-1;
+		if ($_POST['password']==$tab[$login]['password']){ // Si le mot de passe est correct on le fait accéder a la page admin
+			?>
+			<h1>Page de l'administrateur : <?php echo $tab[$login]['login']; ?></h1>
+
+			<?php
+			// On affiche tout les événements avec un bouton pour le modifier et un autre boutons pour le supprimer
+				echo "<h3>Liste des Événements :</h3><ul>";
+				for($i=0;$i<$nbevent;$i++){ // Avec la boucle for on va créer une liste à puces qui va contenir tout les évenements 
+				echo "<li>".$tab_event[$i]["nomevent"];
+			// On commence par créer le bouton pour modifier
+				echo "<a href='modif/modif_event.php?id=".$tab_event[$i]["id_event"]."'>
+				<button>Modifier</button></a>";
+			// Puis on créer le bouton pour supprimer
+				echo "<a href='supp/supp_event.php?id=".$tab_event[$i]["id_event"]."'>
+				<button>Supprimer</button></a></li>" ;}
+			// On ajoute un bouton pour ajouter un événement a la fin de la liste des évents.
+				echo "</ul><a href='ajout/ajout_event.php'>
+				<button>Ajouter un Événement</button></a>";
+
+
+			//On refait pareil avec les boutiques
+				echo "<h3>Liste des Boutiques :</h3><ul>";
+				for($i=0;$i<$nbboutique;$i++){
+				echo "<li>".$tab_boutique[$i]["nomboutique"];
+				echo "<a href='modif/modif_boutique.php?id=".$tab_boutique[$i]["id_boutique"]."'>
+				<button>Modifier</button></a>";
+				echo "<a href='supp/supp_boutique.php?id=".$tab_boutique[$i]["id_boutique"]."'>
+				<button>Supprimer</button></a></li>" ;}
+				echo "</ul><a href='ajout/ajout_boutique.php'>
+				<button> value='Ajouter une Boutique</button></a>";
+
+			// On refait pareil avec les stand
+				echo "<h3>Liste des Stands :</h3><ul>";
+				for($i=0;$i<$nbstand;$i++){
+				echo "<li>".$tab_stand[$i]["nomstand"];
+				echo "<a href='modif/modif_stand.php?id=".$tab_stand[$i]["id_stand"]."'>
+				<button>Modifier</button></a>";
+				echo "<a href='supp/supp_stand.php?id=".$tab_stand[$i]["id_stand"]."'>
+				<button>Supprimer</button></a></li>" ;}
+				echo "</ul><a href='ajout/ajout_stand.php'>
+				<button>Ajouter un Stand</button></a>";
+		}	
+		else { // Sinon on le redirige sur la page de connextion et on indique, via l'url et à la méthode GET
+			echo '<script> 
+			function Redirection(){
+			document.location.href="admin.php?error=1"; 
+			}
+			Redirection()
+			</script>';}
+	?>
+	</body>
+</html>
