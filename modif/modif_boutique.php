@@ -11,26 +11,35 @@ $resultats->closeCursor();
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../style.css"></link>
-  <title>Modif Film</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css"></link>
+    <!-- nom de la page -->
+    <title>Modification Boutique</title>
 </head>
 <body>
+    <!-- titre -->
 	<?php
 	echo '<h1>Modification des informations de la Boutique : '.$tab[1].'</h1>';
 	?>
-	<form method="POST" action="scripts_modifier/modifier_film.php">
+    <!-- formulaire -->
+	<form method="POST" action="modifier/modifier_boutique.php">
+    <div class="row g-3">
 		<?php
 		echo '<input type="text" name="id" value="'.$tab[0].'" hidden>';
 		?>
-		<div>
+        <!-- Nom -->
+		<div class="col-md-4">
 			<label for="nom">Nom de la boutique : </label>
 			<?php
-			echo '<input type="text" name="titre" id="nom" required="required" value="'.$tab[1].'">';
+			echo '<input type="text" name="titre" id="nom" class="form-control" required="required" value="'.$tab[1].'">';
 			?>
-		</div><br/>
-		<div>
+		</div>
+        <!-- Type -->
+		<div class="col-md-4">
 			<label for="type">Type de la boutique :</label>
 			<?php
             echo'<select class="form-select" aria-label="selecttype">
@@ -40,58 +49,68 @@ $resultats->closeCursor();
                 <option value="bois">Travail du bois et des plantes</option>
                 <option value="autre">Autre</option>
                 </select>'
-            
             ?>
-		</div><br/>
-		<div>
-			<label for="xcoord">Coordonée X : </label>
+		</div>
+        <!-- Coordonées X -->
+		<div class="col-md-4">
+			<label for="xcoord">Coordonnées X : </label>
 			<?php
-			echo '<input type="float" id="xcoord" required="required" value="'.$tab[3].'">';	
+			echo '<input type="float" id="xcoord" class="form-control" required="required" value="'.$tab[3].'">';	
 			?>
-		</div><br/>
-		<div>
-        <label for="ycoord">Coordonée Y : </label>
+		</div>
+        <!-- Coordonées Y -->
+		<div class="col-md-4">
+        <label for="ycoord">Coordonnées Y : </label>
 			<?php
-			echo '<input type="float" id="ycoord" required="required" value="'.$tab[4].'">';	
+			echo '<input type="float" id="ycoord" class="form-control" required="required" value="'.$tab[4].'">';	
 			?>
-		</div><br/>
-        <div>
+		</div>
+        <!-- Description -->
+        <div class="col-md-8">
         <label for="description">Description de la Boutique  : </label>
 			<?php
-			echo '<textarea id="description" name="decription "required="required">'.$tab[5].'</textarea>';	
+			echo '<textarea id="description" name="decription" class="form-control"  required="required">'.$tab[5].'</textarea>';	
 			?>
-		</div><br/>
-        <div>
+		</div>
+        <!-- Horaire ouverture -->
+        <div class="col-md-4">
         <label for="ouverture">Horaire de l'ouverture : </label>
 			<?php
-			echo '<input type="text" id="ouverture" required="required" value="'.$tab[7].'">';	
+			echo '<input type="text" id="ouverture" class="form-control" required="required" value="'.$tab[7].'">';	
 			?>
-		</div><br/>
-        <div>
+		</div>
+        <!-- Horaire fermeture -->
+        <div class="col-md-4">
         <label for="fermeture">Horaire de la fermeture : </label>
 			<?php
-			echo '<input type="text" id="fermeture" required="required" value="'.$tab[8].'">';	
+			echo '<input type="text" id="fermeture" class="form-control" required="required" value="'.$tab[8].'">';	
 			?>
-		</div><br/>
-        <div>
-        <label for="tel">téléphone de la Boutique : </label>
+		</div>
+        <!-- Telephone -->
+        <div class="col-md-4">
+        <label for="tel">Téléphone de la Boutique : </label>
 			<?php
-			echo '<input type="text" id="tel" required="required" value="'.$tab[9].'">';	
+			echo '<input type="text" id="tel" class="form-control" required="required" value="'.$tab[9].'">';	
 			?>
-		</div><br/>
-        <div>
+		</div>
+        <!-- Image -->
+        <div class="col-md-4">
         <label for="img">Image de la Boutique : </label>
 			<?php
-			echo '<input type="file" id="img" required="required">';	
+			echo '<input type="file" id="img" class="form-control" required="required">';	
 			?>
-		</div><br/>
-		<div>
-			<input type="submit" value="Modifier les informations de la Boutique !">
 		</div>
+        <!-- Bouton valider -->
+		<div>
+			<input type="submit" class="btn btn-primary" value="Modifier les informations de la Boutique !">
+		</div>
+    </div>
 	</form>
-	<br/>
 	<form action="../index.php">
-		<input type="submit" value="Annuler">
+        <!-- Bouton annuler -->
+        <div>
+		    <input type="submit" class="btn btn-primary" value="Annuler">
+        </div>
 	</form>
 </body>
 </html>
