@@ -25,17 +25,18 @@ $nbadmin=count($tab);
         <!-- Formulaire -->
         <form method="post" action="admin_connexion.php">
             <div class="row g-3">
+                <!-- Login -->
                 <div class="col-md-3">
                   <label for="inputlogin" class="form-label">Login</label>
-                  <select name="login" required=required id="pet-select">
-                    <?php echo'<option disabled=disabled>Choisir un profil admin</option>'; ?>
-                    <?php 
+                  <select name="login" class="form-select" required=required id="pet-select">
+                    <?php echo'<option disabled=disabled>Choisir un profil admin</option>'; 
                     for ($i=0;$i<$nbadmin;$i++){
                         echo'<option value="'.$tab[$i]['id_admin'].'">'.$tab[$i]['login'].'</option>'; 
                     }
                     ?>
-                </select>
+                    </select>
                 </div>
+                <!-- Mot de passe -->
                 <div class="col-md-3">
                   <label for="inputPassword4" class="form-label">Mot de passe</label>
                   <input type="password" class="form-control" name="password" id="inputPassword4">
@@ -43,9 +44,10 @@ $nbadmin=count($tab);
 
                 <?php // Message d'erreur dans le cas ou l'on met un mauvais mot de passe
                 if (isset($_GET['error'])){ //mettre le message en rouge 
-                    echo'<div>mot de passe incorrecte</div>'; 
+                    echo'<div>Mot de passe incorrect</div>'; 
                 }
                 ?>
+                <!-- Bouton de connexion -->
                 <div class="col-12">
                     <button type="submit" class="btn btn-primary">Se connecter</button>
                 </div>
