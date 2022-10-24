@@ -55,18 +55,3 @@ li img:hover {
     padding: 11px 34px;
     background-color: #d1ebb2;
 }
-
-.titre_1{
-    display: flex;
-    color: #617A43;
-    font-size: 45px;
-    font-family: "engage";
-    text-align: center;
-    padding: 50px 0px 0px 50px;
-}
-.titre_2{
-    display: flex;
-    padding: 50px 0px 0px 60px;
-    font-size: 25px;
-
-}
