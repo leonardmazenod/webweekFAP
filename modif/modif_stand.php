@@ -2,7 +2,7 @@
 $id=$_GET['id'];
 $connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 // Requete SQL pour recupérer les inaations sur les Boutiques
-$requete="SELECT * FROM evenement WHERE id_event=".$id;
+$requete="SELECT * FROM stand WHERE id_stand=".$id;
 $resultats=$connection->query($requete);
 $tab=$resultats->fetch();
 $resultats->closeCursor();
@@ -18,59 +18,79 @@ $resultats->closeCursor();
 </head>
 <body>
 	<?php
-	echo '<h1>Modification des informations de l\'Événement : '.$tab[1].'</h1>';
+	echo '<h1>Modification des informations du Stand : '.$tab[1].'</h1>';
 	?>
-	<form method="POST" action="modifier/modifier_event.php">
+	<form method="POST" action="modifier/modifier_stand.php">
 		<?php
 		echo '<input type="text" name="id" value="'.$tab[0].'" hidden>';
 		?>
 		<div>
-			<label for="nom">Nom de l'Événement : </label>
+			<label for="nom">Nom du Stand : </label>
 			<?php
-			echo '<input type="text" name="titre" id="nom" required="required" value="'.$tab[1].'">';
+			echo '<input type="text" name="nom" id="nom" required="required" value="'.$tab[1].'">';
 			?>
-		</div>
+		</div><br/>
+		<div>
+        <label for="type">Type du Stand :</label>
+			<?php
+            echo'<select class="form-select" name="type" aria-label="selecttype">
+                <option selected disabled>'.$tab[2].'</option>
+                <option value="textile">Textile</option>
+                <option value="sculpture">Sculpture</option>
+                <option value="bois">Travail du bois et des plantes</option>
+                <option value="autre">Autre</option>
+                </select>'
+            
+            ?>
+		</div><br/>
 		<div>
 			<label for="xcoord">Coordonée X : </label>
 			<?php
-			echo '<input type="float" id="xcoord" required="required" value="'.$tab[3].'">';	
+			echo '<input type="float" id="xcoord" name="xcoord" required="required" value="'.$tab[3].'">';	
 			?>
-		</div>
+		</div><br/>
 		<div>
         <label for="ycoord">Coordonée Y : </label>
 			<?php
-			echo '<input type="float" id="ycoord" required="required" value="'.$tab[4].'">';	
+			echo '<input type="float" id="ycoord" name="ycoord" required="required" value="'.$tab[4].'">';	
 			?>
-		</div>
+		</div><br/>
         <div>
-        <label for="description">Description de l'Événement  : </label>
+        <label for="description">Description du Stand  : </label>
 			<?php
-			echo '<textarea id="description" name="decription "required="required">'.$tab[2].'</textarea>';	
+			echo '<textarea id="description" name="description" required="required">'.$tab[5].'</textarea>';	
 			?>
-		</div>
+		</div><br/>
         <div>
-        <label for="horaire">Horaire de l'Événement : </label>
+        <label for="ouverture">Horaire de l'ouverture : </label>
 			<?php
-			echo '<input type="date" id="horaire" required="required" value="'.$tab[6].'">';	
+			echo '<input type="text" id="ouverture" name="ouverture" required="required" value="'.$tab[7].'">';	
 			?>
-		</div>
+		</div><br/>
         <div>
-        <label for="duree">Horaire de la fermeture : </label>
+        <label for="fermeture">Horaire de la fermeture : </label>
 			<?php
-			echo '<input type="text" id="duree" required="required" value="'.$tab[7].'">';	
+			echo '<input type="text" id="fermeture" name="fermeture" required="required" value="'.$tab[8].'">';	
 			?>
-		</div>
+		</div><br/>
+        <div>
+        <label for="emplacement">Type d'emplacement : </label>
+			<?php
+			echo '<input type="text" id="tel" name="emplacement" required="required" value="'.$tab[9].'">';	
+			?>
+		</div><br/>
         <div>
         <label for="img">Image du Stand : </label>
 			<?php
-			echo '<input type="file" id="img" required="required">';	
+			echo '<input type="file" id="img" name="img" required="required">';	
 			?>
-		</div>
+		</div><br/>
 		<div>
-			<input type="submit" value="Modifier les informations de l\'Événement !">
+			<input type="submit" value="Modifier les informations du Stand !">
 		</div>
 	</form>
-	<form action="../index.php">
+	<br/>
+	<form action="../admin.php">
 		<input type="submit" value="Annuler">
 	</form>
 </body>

@@ -27,50 +27,50 @@ $resultats->closeCursor();
 		<div>
 			<label for="nom">Nom de l'Événement : </label>
 			<?php
-			echo '<input type="text" name="titre" id="nom" required="required" value="'.$tab[1].'">';
+			echo '<input type="text" name="nom" id="nom" required="required" value="'.$tab[1].'">';
 			?>
 		</div>
 		<div>
 			<label for="xcoord">Coordonée X : </label>
 			<?php
-			echo '<input type="float" id="xcoord" required="required" value="'.$tab[3].'">';	
+			echo '<input type="float" name="xcoord" required="required" value="'.$tab[3].'">';	
 			?>
 		</div>
 		<div>
         <label for="ycoord">Coordonée Y : </label>
 			<?php
-			echo '<input type="float" id="ycoord" required="required" value="'.$tab[4].'">';	
+			echo '<input type="float" name="ycoord" required="required" value="'.$tab[4].'">';	
 			?>
 		</div>
         <div>
         <label for="description">Description de l'Événement  : </label>
 			<?php
-			echo '<textarea id="description" name="decription "required="required">'.$tab[2].'</textarea>';	
+			echo '<textarea id="description" name="description" required="required">'.$tab[2].'</textarea>';	
 			?>
 		</div>
         <div>
         <label for="horaire">Horaire de l'Événement : </label>
 			<?php
-			echo '<input type="date" id="horaire" required="required" value="'.$tab[6].'">';	
+			echo '<input type="date" name="horaire" required="required" value="'.$tab[6].'">';	
 			?>
 		</div>
         <div>
         <label for="duree">Horaire de la fermeture : </label>
 			<?php
-			echo '<input type="text" id="duree" required="required" value="'.$tab[7].'">';	
+			echo '<input type="text" name="duree" required="required" value="'.$tab[7].'">';	
 			?>
 		</div>
         <div>
         <label for="img">Image du Stand : </label>
 			<?php
-			echo '<input type="file" id="img" required="required">';	
+			echo '<input type="file" name="img" required="required">';	
 			?>
 		</div>
 		<div>
 			<input type="submit" value="Modifier les informations de l\'Événement !">
 		</div>
 	</form>
-	<form action="../index.php">
+	<form action="../admin.php">
 		<input type="submit" value="Annuler">
 	</form>
 </body>
