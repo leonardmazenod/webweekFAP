@@ -1,8 +1,4 @@
-
-
-   
-   
-  .mapContainer {
+.mapContainer {
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -10,9 +6,8 @@
     margin-top: auto;
     justify-content: center;
     padding: 2% 2% 2% 2% ;
-
   }
+
 .carte-flex{
   display: flex;
-
 }
