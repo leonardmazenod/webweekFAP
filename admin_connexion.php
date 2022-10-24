@@ -79,7 +79,7 @@ $nbevent=count($tab_event);
 				}else{echo'</li>';}}
 				if ($tab[$login]['login']=="admin_fap_all_right"){
 				echo "</ul><a href='ajout/ajout_boutique.php'>
-				<button> value='Ajouter une Boutique</button></a>";}
+				<button>Ajouter une Boutique</button></a>";}
 				else{echo'</ul>';}
 
 			// On refait pareil avec les stand
