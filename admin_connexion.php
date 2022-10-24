@@ -55,12 +55,16 @@ $nbevent=count($tab_event);
 			// On commence par créer le bouton pour modifier
 				echo "<a href='modif/modif_event.php?id=".$tab_event[$i]["id_event"]."'>
 				<button>Modifier</button></a>";
+				if ($tab[$login]['login']=="admin_fap_all_right"){ // On regarde quel admin est connecté est selon ces droit on lui affiche les boutons
 			// Puis on créer le bouton pour supprimer
 				echo "<a href='supp/supp_event.php?id=".$tab_event[$i]["id_event"]."'>
 				<button>Supprimer</button></a></li>" ;}
+				else{echo'</li>';}}
+				if ($tab[$login]['login']=="admin_fap_all_right"){ // Selon les droits de l'admin on lui affcihe le bouton pour ajouter des événements
 			// On ajoute un bouton pour ajouter un événement a la fin de la liste des évents.
 				echo "</ul><a href='ajout/ajout_event.php'>
-				<button>Ajouter un Événement</button></a>";
+				<button>Ajouter un Événement</button></a>";}
+				else{echo'</ul>';}
 
 
 			//On refait pareil avec les boutiques
@@ -69,10 +73,14 @@ $nbevent=count($tab_event);
 				echo "<li>".$tab_boutique[$i]["nomboutique"];
 				echo "<a href='modif/modif_boutique.php?id=".$tab_boutique[$i]["id_boutique"]."'>
 				<button>Modifier</button></a>";
+				if ($tab[$login]['login']=="admin_fap_all_right"){
 				echo "<a href='supp/supp_boutique.php?id=".$tab_boutique[$i]["id_boutique"]."'>
-				<button>Supprimer</button></a></li>" ;}
+				<button>Supprimer</button></a></li>" ;
+				}else{echo'</li>';}}
+				if ($tab[$login]['login']=="admin_fap_all_right"){
 				echo "</ul><a href='ajout/ajout_boutique.php'>
-				<button> value='Ajouter une Boutique</button></a>";
+				<button> value='Ajouter une Boutique</button></a>";}
+				else{echo'</ul>';}
 
 			// On refait pareil avec les stand
 				echo "<h3>Liste des Stands :</h3><ul>";
@@ -80,18 +88,23 @@ $nbevent=count($tab_event);
 				echo "<li>".$tab_stand[$i]["nomstand"];
 				echo "<a href='modif/modif_stand.php?id=".$tab_stand[$i]["id_stand"]."'>
 				<button>Modifier</button></a>";
+				if ($tab[$login]['login']=="admin_fap_all_right"){
 				echo "<a href='supp/supp_stand.php?id=".$tab_stand[$i]["id_stand"]."'>
-				<button>Supprimer</button></a></li>" ;}
+				<button>Supprimer</button></a></li>" ;
+				}else{echo'</li>';}}
+				if ($tab[$login]['login']=="admin_fap_all_right"){
 				echo "</ul><a href='ajout/ajout_stand.php'>
-				<button>Ajouter un Stand</button></a>";
-		}	
-		else { // Sinon on le redirige sur la page de connextion et on indique, via l'url et à la méthode GET
-			echo '<script> 
-			function Redirection(){
-			document.location.href="admin.php?error=1"; 
+				<button>Ajouter un Stand</button></a>";}
+				else{echo'</ul>';}	
+				
 			}
-			Redirection()
-			</script>';}
+				else { // Sinon on le redirige sur la page de connextion et on indique, via l'url et à la méthode GET
+				echo '<script> 
+				function Redirection(){
+				document.location.href="admin.php?error=1"; 
+				}
+				Redirection()
+				</script>';}
 	?>
 	</body>
 </html>
