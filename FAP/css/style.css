@@ -166,4 +166,64 @@ h4 {
 }
 
 /************** PAGE FESTIVAL ****************/
+.GDtitre_1{
+    display: flex;
+    color: #617A43;
+    font-size: 50px;
+    font-family: "engage";
+    text-align: center;
+    padding: 50px 50px 50px 50px;
+}
+.titre_1{
+    display: flex;
+    padding: 50px 0px 0px 60px;
+    font-size: 45px;
+    color: #617A43;
 
+}
+.descr_1{
+    display: flex ;
+    padding: 50px 100px 0px 70px ;
+    font-size: 35px;
+    text-align: left;
+}
+.titre_2{
+    display: flex;
+    padding: 50px 0px 0px 950px;
+    font-size: 45px;
+    color: #617A43;
+}
+
+.descr_2{
+    display: flex ;
+    padding: 50px 100px 0px 400px ;
+    font-size: 35px;
+    text-align: right;
+}
+.titre_3{
+    display: flex;
+    padding: 50px 0px 0px 60px;
+    font-size: 45px;
+    color: #617A43;
+}
+
+.descr_3{
+    display: flex ;
+    padding: 50px 100px 0px 70px ;
+    font-size: 35px;
+    text-align: left;
+}
+
+.titre_4{
+    display: flex;
+    padding: 50px 0px 0px 950px;
+    font-size: 45px;
+    color: #617A43;
+}
+
+.descr_4{
+    display: flex ;
+    padding: 50px 100px 0px 400px ;
+    font-size: 35px;
+    text-align: right;
+}
