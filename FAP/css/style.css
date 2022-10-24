@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Engage";
+    src: url("../fonts/EngageRegular.otf");
+   }
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Berlin Sans FB;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+* >body {
+    background-image: url(../img/fond.png);
+    background-size: 100vw;
+}
+
+/*Navbar*/
+
+header {
+    position: fixed;
+}
+
+nav {
+    width: 100vw;
+    margin-top: -50px;
+    padding: 25px 0;
+    transition: .5s;
+
+}
+
+.bgheader {
+    background-color: #f7f1f0;
+    padding: 15px 0;
+    transition: .5s;
+}
+
+.bgheader img{
+    width: 100px;
+    transition: .5s;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li a {
+ text-transform:uppercase;
+ transition: .2s;
+}
+
+li a:hover {
+    color: #617A43;
+}
+
+li img {
+    width: 150px;
+    transition: .2s;
+}
+
+li img:hover {
+    transform: scale(1.1);
+}
+
+.inscription {
+    background-color: #617A43;
+    color: white;
+    padding: 10px 40px;
+    border-radius:6px ;
+    transition: .2s;
+}
+
+.inscription:hover {
+    background-color: #779651;
+    color: white;
+}
+
+/*Titre*/
+
+.titre {
+    color: #617A43;
+    padding: 120px 0 0 0;
+    margin: 50px 5vw 0 5vw;
+}
+
+h1 {
+    font-family: "Engage";
+    font-size: 7vw;
+    width: 80vw;
+}
+
+h3 {
+    font-size: 34px;
+    margin: 0 0 30px 0;
+    color: black;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    background-color:#617A43;
+    padding: 10px 40px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 28px;
+    font-weight: 400;
+    transition: .2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #779651;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Sous-titre*/
+
+.sous-titre {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5vw 0 5vw;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 3vw;
+    text-transform:uppercase;
+    color: #617A43;
+    margin: 80px 0;
+}
+
+/*carte*/
+
+.cartes {
+    display: flex;
+    margin: 0 5vw 0 5vw;
+}
+
+.carte {
+    margin:2vw
+}
+
+.sous-texte {
+    margin: 5px 20px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.carte a {
+    color:#617A43;
+}
