@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Engage";
+    src: url("../fonts/EngageRegular.otf");
+   }
+
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: Berlin Sans FB;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/*Navbar*/
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+li a {
+ text-decoration: none;
+ color: black;
+ text-transform:uppercase;
+ transition: .2s;
+}
+
+li a:hover {
+    color: #617A43;
+    font-size: 22px;
+}
+
+li img {
+    width: 150px;
+    transition: .2s;
+}
+
+li img:hover {
+    width: 170px;
+}
+
+.inscription {
+    background-color: #617A43;
+    color: white;
+    padding: 10px 30px;
+    border-radius:6px ;
+    transition: .2s;
+}
+
+.inscription:hover {
+    color: #000000;
+    padding: 11px 34px;
+    background-color: #d1ebb2;
+}
+
+.titre_1{
+    display: flex;
+    color: #617A43;
+    font-size: 45px;
+    font-family: "engage";
+    text-align: center;
+    padding: 50px 0px 0px 50px;
+}
+.titre_2{
+    display: flex;
+    padding: 50px 0px 0px 60px;
+    font-size: 25px;
+
+}
