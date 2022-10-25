@@ -24,15 +24,21 @@ $tab_event=$resultats->fetchAll();
 $resultats->closeCursor();
 $nbevent=count($tab_event);
 
-
 echo "<h1>Programme : </h1>";
 
 
 echo "<h2>Liste des Événements : </h2>";
 $liste_event=array();
 for ($i=0;$i<$nbevent;$i++){
+    $id_event=$tab_event[$i][0];
+    $requete="SELECT * FROM `va_participer` WHERE id_event=$id_event";
+    $resultats=$connection->query($requete);
+    $tab_participant=$resultats->fetchAll();
+    $resultats->closeCursor();
+    $nbparticipant=count($tab_participant);
+
     $liste_event[$i]=new Evenement ($tab_event[$i][1],$tab_event[$i][2],$tab_event[$i][3],$tab_event[$i][4],$tab_event[$i][5],$tab_event[$i][6],$tab_event[$i][7],$tab_event[$i][8],$tab_event[$i][0]);
-    $liste_event[$i]->affiche_event();
+    $liste_event[$i]->affiche_event($nbparticipant);
 }
 echo "<h2>Liste des Boutique : </h2>";
 $liste_boutique=array();
