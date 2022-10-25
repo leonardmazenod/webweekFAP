@@ -82,7 +82,7 @@ CREATE TABLE `evenement` (
   `ycoordevent` float NOT NULL,
   `imgevent` blob NOT NULL,
   `horaireevent` datetime NOT NULL,
-  `dureeevent` time NOT NULL
+  `dureeevent` time NOT NULL,
   `nbplace` int(10) NOT NULL,
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
