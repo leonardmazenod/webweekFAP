@@ -12,13 +12,13 @@ $imgstand=$_POST['img'];
 
 
 //	Requête qui permet d'insérer toutes les informations que l'on a récupéré dans le formlaire sur le nouveau film	et de les insérer dans la base de données // 
-$reqpreparee = $connection->prepare("INSERT INTO stand(nomstand,typestand,xcoordstand,ycoordstand,descriptionstand,imgstand,ouverturestand,fermeturestand,emplacement) VALUES(:nomstand,:typestand,:xcoordstand,:ycoordstand,:descriptionstand,:imgbouti,:ouverturestand,:fermeturestand,:emplacement)");
+$reqpreparee = $connection->prepare("INSERT INTO stand(nomstand,typestand,xcoordstand,ycoordstand,descriptionstand,imgstand,ouverturestand,fermeturestand,emplacement) VALUES(:nomstand,:typestand,:xcoordstand,:ycoordstand,:descriptionstand,:imgstand,:ouverturestand,:fermeturestand,:emplacement)");
 $reqpreparee->bindParam(':nomstand', $nomstand); 
 $reqpreparee->bindParam(':typestand', $typestand);
 $reqpreparee->bindParam(':xcoordstand', $xcoordstand); 
 $reqpreparee->bindParam(':ycoordstand', $ycoordstand); 
 $reqpreparee->bindParam(':descriptionstand', $descriptionstand); 
-$reqpreparee->bindParam(':imgbouti', $imgbouti); 
+$reqpreparee->bindParam(':imgstand', $imgstand); 
 $reqpreparee->bindParam(':ouverturestand', $ouverturestand); 
 $reqpreparee->bindParam(':fermeturestand', $fermeturestand); 
 $reqpreparee->bindParam(':emplacement', $emplacement); 
