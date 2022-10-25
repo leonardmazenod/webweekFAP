@@ -61,5 +61,9 @@
             Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
         </div>
      </div>
+
+     <?php 
+        include("footer.php"); 
+    ?>
     </body>
 </html>

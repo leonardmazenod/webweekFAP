@@ -25,10 +25,10 @@
                         <a href="#">Carte</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/logo.png" alt="logo"/></i></a>
+                        <a href="index.php"><img src="img/logo.png" alt="logo"/></i></a>
                     </li>
                     <li>
-                        <a href="#">Le festival</a>
+                        <a href="festival.php">Le festival</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
