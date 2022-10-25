@@ -10,7 +10,7 @@
         <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
     </head>
-    <body>
+    <body class="index">
     <!-- Navbar -->
     <?php 
         include("navbar.php"); 
@@ -26,10 +26,15 @@
         </div>
     </div>
 
-    <!-- Sous-titre -->
-    <div class="sous-titre">
+    <!-- Article -->
+    <div class="Article">
         <h2>Des artisants de toute l’Europe se réunissent pour tenir un festival au Puy-en-Velay du 8 au 10 avril 2023</h2>
-        <button>en savoir plus sur le festival</button>
+        <img src="img/artisan_petit.jpg">
+        <div class="texte1">
+            <h4>L’artisanat dévoile ses talents</h4>
+            <p>Le Festival de l’Artisanat est un événement qui valorise toutes les filières de l’artisanat en vous offrant la possibilité de découvrir ou redécouvrir des savoir-faire, des techniques et des produits et services à l’occasion d’une grande fête de l’artisanat se déroulant sur 3 jours. Partez à la rencontre de près de 300 artisans dans tout le centre ville du Puy-en-Velay.</p>
+            <button>en savoir plus sur le festival</button>
+        </div>
     </div>
 
     <!-- Cartes -->
@@ -60,8 +65,10 @@
         </div>
     </div>
 
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <!-- Footer -->
+    <?php 
+            include("footer.php"); 
+        ?>
 
-        <script src="js/script.js"></script>
     </body>
 </html>

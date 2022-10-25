@@ -11,9 +11,9 @@
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
     </head>
     <body>
-        <header>    
+        <footer>
             <!-- Navbar -->
-            <nav>
+            <div class="nav">
                 <ul>
                     <li>
                         <a href="#">Programme</a>
@@ -25,10 +25,7 @@
                         <a href="#">Carte</a>
                     </li>
                     <li>
-                        <a href="#"><img src="img/logo.png" alt="logo"/></i></a>
-                    </li>
-                    <li>
-                        <a href="#">Le festival</a>
+                        <a href="festival.php">Le festival</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -37,18 +34,14 @@
                         <a class="inscription" href="#">Inscription</a>
                     </li>
                 </ul>
-            </nav>
-        </header>
+            </div>
 
-        <!--Apparition du background sous le header-->
-        <script type="text/Javascript">
-            $(window).on('scroll',function(){
-                if ($(window).scrollTop()){
-                    $('nav').addClass('bgheader');
-                }
-                else
-                {
-                    $('nav').removeClass('bgheader');
-                }
-            })
-        </script>
+            <div class="sponsor">
+                <img src="img/Sponsor/Agglo-01.png" alt="">
+                <img src="img/Sponsor/chambre-des-metiers-01.png" alt="">
+                <img src="img/Sponsor/CreditAgricole-01.png" alt="">
+                <img src="img/Sponsor/LaRegion-01.png" alt="">
+                <img src="img/Sponsor/ministere-01.png" alt="">
+            </div>
+        </footer>
+    </body>
