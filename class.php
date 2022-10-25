@@ -50,43 +50,51 @@ Class Commerce extends Atelier{
 Class Boutique extends Commerce{
     public $telboutique="";
 
-    public function __construct($telboutique,$type,$ouverture,$fermeture,$nom,$description,$xcoord,$ycoord,$img){
+    public function __construct($nom,$type,$xcoord,$ycoord,$description,$img,$ouverture,$fermeture,$telboutique){
         parent::__construct($type,$ouverture,$fermeture,$nom,$description,$xcoord,$ycoord,$img);
         $this->telboutique=$telboutique;
     }
 
     public function affiche_boutique(){
-        echo"<h2>Boutique : </h2><ul><li>Nom : ".$this->nom."</li><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Téléphone de la Boutique : ".$this->telboutique."</li></ul>";
+        echo"<h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Téléphone de la Boutique : ".$this->telboutique."</li></ul>";
     }
 }
 
 Class Stand extends Commerce{
     public $emplacement="";
 
-    public function __construct($emplacement,$type,$ouverture,$fermeture,$nom,$description,$xcoord,$ycoord,$img){
+    public function __construct($nom,$type,$xcoord,$ycoord,$description,$img,$ouverture,$fermeture,$emplacement){
         parent::__construct($type,$ouverture,$fermeture,$nom,$description,$xcoord,$ycoord,$img);
         $this->emplacement=$emplacement;
     }
 
     public function affiche_stand(){
-        echo"<h2>Stand : </h2><ul><li>Nom : ".$this->nom."</li><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Type d'emplacement du stand : ".$this->emplacement."</li></ul>";
+        echo"<h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Type d'emplacement du stand : ".$this->emplacement."</li></ul>";
     }
 }
 
 Class Evenement extends Atelier{
     public $debutevent="";
     public $duree="";
-    public $jour="";
+    public $nbplace="";
+    public $id;
 
-    public function __construct($debutevent,$duree,$jour,$nom,$description,$xcoord,$ycoord,$img){
+    public function __construct($nom,$description,$xcoord,$ycoord,$img,$duree,$debutevent,$nbplace,$id){
         parent::__construct($nom,$description,$xcoord,$ycoord,$img);
         $this->debutevent=$debutevent;
         $this->duree=$duree;
-        $this->jour=$jour;
+        $this->nbplace=$nbplace;
+        $this->id=$id;
     }
 
     public function affiche_event(){
-        echo"<h2>Stand : </h2><ul><li>Nom : ".$this->nom."</li><li>Description : ".$this->description."</li><li>Jour de l'événement : ".$this->jour."</li><li>Début : ".$this->debutevent."</li><li>Durée : ".$this->duree."</li></ul>";
+        echo"<h3>".$this->nom.": </h3><ul><li>Description : ".$this->description."</li><li>Début : ".$this->duree."</li><li>Durée : ".$this->debutevent."</li></ul>";
+        if ($this->nbplace>0){
+            echo "<a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a>";
+        }
+        else{
+            echo "Il n'y a pas besoin de s'inscrire pour assister à cet événement.";
+        }
     }
 
     public function creeparticipants($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant){
@@ -107,11 +115,12 @@ Class Participant{
     public $emailparticipant="";
     public $telparticipant="";
 
-    public function __construct($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant){
+    public function __construct($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant,$nbplace){
         $this->nomparticipant=$nomparticipant;
         $this->prenomparticipant=$prenomparticipant;
         $this->emailparticipant=$emailparticipant;
         $this->telparticipant=$telparticipant;
+        
     }
 
     public function affiche_event(){
@@ -119,8 +128,6 @@ Class Participant{
     }
 
 }
-
-
 
 ?>
 
