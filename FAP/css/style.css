@@ -242,3 +242,17 @@ h4 {
     display: flex;
     padding: 10px 10px 10px 70px ;
   }
+
+/* Formulaire */
+form {
+    margin: 5px;
+}
+form > div {
+    margin: 10px ;
+}
+form > div > div {
+    margin: 5px;
+}
+textarea {
+    margin: 5px 0px;
+}
