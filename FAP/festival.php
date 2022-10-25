@@ -19,7 +19,7 @@
     <div class="GDtitre_1">
         Des artisants de toute l’Europe se réunissent pour tenir un festival au Puy-en-Velay du 8 au 10 avril 2023
     </div>
-    <hr>
+    <hr><hr>
     <div class="titre_1">
         L’artisanat dévoile ses talents
     </div>
@@ -31,12 +31,15 @@
     <div class="titre_2">
         Des démonstrations et animations quotidiennes
     </div>
-    <div class="descr_2">
-        Sur la grande place du plot et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
-        laisse une place aux démonstrations et animations quotidiennes.
-
-    </div>
-
+        
+     <div class="flex-photo_1">
+          <img class="jlm" src="img/artisan_petit.jpg">        
+          <div class="descr_2">  
+              Sur la grande place du plot et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
+              laisse une place aux démonstrations et animations quotidienne.
+          </div>
+      </div>
+ 
     <div class="titre_3">
         L’artisanat un métier d’avenir
     </div>
@@ -51,10 +54,12 @@
         Les villes jumelées avec le Puy-En-Velay
     </div>
 
-    <div class="descr_4">
-        Le Puy-en-Velay est jumelé avec  plusieurs villes en Europe dont Meschede qui est une ville en allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
-        Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
-    </div>
-
+    <div class="flex-photo_2">
+        <img src="img/tonbridge.png" alt="">
+        <div class="descr_4">
+            Le Puy-en-Velay est jumelé avec  plusieurs villes en Europe dont Meschede qui est une ville en allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
+            Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
+        </div>
+     </div>
     </body>
 </html>
