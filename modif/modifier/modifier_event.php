@@ -1,77 +1,62 @@
+
 <?php
 $id=$_POST['id'];
 $bdd=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
-// Requête qui permet d'obtenir une liste avec toutes les informations sur le stand que l'ont a choisie // 
+// Requête qui permet d'obtenir une liste avec toutes les informations sur le event que l'ont a choisie // 
 //Sert a compérer ses informations avec les info rentrer dans le formulaire pour savoir si l'admin a choisie oui ou non de modifier les informations //
-$requete='SELECT * FROM `stand` WHERE id_stand='.$id; 
+$requete='SELECT * FROM `evenement` WHERE id_event='.$id; 
 $resultats = $bdd->query($requete) ;
 $tab=$resultats->fetch() ;
 $resultats->closeCursor() ;
 
-echo $_POST['nom'];
-
 if ($_POST['nom']!=$tab[1]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier le nom du stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET nomstand="'.$_POST['nom'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour du nom de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour du nom de la stand  : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier le nom du event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET nomevent="'.$_POST['nom'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour du nom de la event est un succés </br>"; } 
+else { echo "Echec de la mise à jour du nom de la event  : " . mysqli_error($conn)."</br>"; }}
 
-if ($_POST['type']!=$tab[2]){
+if ($_POST['xcoord']!=$tab[2]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier le type du stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET typestand="'.$_POST['type'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour du type de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour du type de la stand : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier la coord X du event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET xcoordevent="'.$_POST['xcoord'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour de la coordonée X de l'event est un succés </br>"; } 
+else { echo "Echec de la mise à jour de la coordonée X de la event : " . mysqli_error($conn)."</br>"; }}
 
-if ($_POST['xcoord']!=$tab[3]){
+if ($_POST['ycoord']!=$tab[3]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier la coord X du stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET xcoordstand="'.$_POST['xcoord'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de la coordonée X de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour de la coordonée X de la stand : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier la coord Y du event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET ycoordevent="'.$_POST['ycoord'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour de la coordonée Y de l'event est un succés </br>"; } 
+else { echo "Echec de la mise à jour de la coordonée Y de la event : " . mysqli_error($conn)."</br>"; }}
 
-if ($_POST['ycoord']!=$tab[4]){
+if ($_POST['description']!=$tab[4]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier la coord Y du stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET ycoordstand="'.$_POST['ycoord'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de la coordonée Y de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour de la coordonée Y de la stand : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier la description de l'event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET defevent="'.$_POST['description'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description de l'vent est un succés </br>"; } 
+else { echo "Echec de la mise à jour de la description de la event : " . mysqli_error($conn)."</br>"; }}
 
-if ($_POST['description']!=$tab[5]){
+if ($_POST['horaire']!=$tab[5]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier la description du stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET descriptionstand="'.$_POST['description'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour de la description de la stand : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier l'horaire de l'event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET horaireevent="'.$_POST['horaire'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description de l'horaire de l'event est un succés </br>"; } 
+else { echo "Echec de la mise à jour de l'horaire de l'event : " . mysqli_error($conn)."</br>"; }}
 
-if ($_POST['ouverture']!=$tab[7]){
+if ($_POST['duree']!=$tab[6]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier l'horaire d'ouverture de la stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET ouverturestand="'.$_POST['ouverture'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description de l'horaire d'ouverture stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour de l'horaire d'ouverture de la stand : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier la duree l'event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET dureeevent="'.$_POST['duree'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description de l'horaire de fermeture event est un succés </br>"; } 
+else { echo "Echec de la mise à jour de l'horaire de fermeture de la event : " . mysqli_error($conn)."</br>"; }}
 
-if ($_POST['fermeture']!=$tab[8]){
+if ($_POST['img']!=$tab[7]){
 $connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier l'horaire de fermeture de la stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET fermeturestand="'.$_POST['fermeture'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description de l'horaire de fermeture stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour de l'horaire de fermeture de la stand : " . mysqli_error($conn)."</br>"; }}
-
-if ($_POST['tel']!=$tab[9]){
-$connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier l'horaire d'ouverture de la stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET tel stand="'.$_POST['tel'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de la description du téléphone de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour du téléphone de la stand : " . mysqli_error($conn)."</br>"; }}
-
-if ($_POST['img']!=$tab[9]){
-$connection = mysqli_connect("localhost", "root", "", "festival");
-// Requête pour modifier l'image de la stand dans le cas où l'admin l'a demandé //
-$requete = 'UPDATE stand SET imgstand="'.$_POST['img'].'" WHERE id_stand='.$id; 
-if (mysqli_query($connection, $requete)) { echo "La mise à jour de l'image de la stand est un succés </br>"; } 
-else { echo "Echec de la mise à jour de l'image de la stand : " . mysqli_error($conn)."</br>"; }}
+// Requête pour modifier l'image de l'event dans le cas où l'admin l'a demandé //
+$requete = 'UPDATE evenement SET imgevent="'.$_POST['img'].'" WHERE id_event='.$id; 
+if (mysqli_query($connection, $requete)) { echo "La mise à jour de l'image de l'event est un succés </br>"; } 
+else { echo "Echec de la mise à jour de l'image de l'event : " . mysqli_error($conn)."</br>"; }}
     
 ?>
 <!DOCTYPE html>
@@ -80,11 +65,11 @@ else { echo "Echec de la mise à jour de l'image de la stand : " . mysqli_error(
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../css/style.css"></link>
-  <title>Modifier un stand</title>
+  <title>Modifier un event</title>
 </head>
 <body>
 <form action="../../admin.php">
-	<input type="submit" value="Retourner à la page d'acceuil !">
+    <input type="submit" value="Retourner à la page d'acceuil !">
 </form>
 </body>
 </html>
