@@ -17,7 +17,7 @@
 		</div><br/>
 		<div>
 			<label for="type">Type de la boutique :</label>
-			<select class="form-select" name="type" aria-label="selecttype">
+			<select class="form-select" required="required" name="type" aria-label="selecttype">
                 <option selected disabled>Choisir un type</option>
                 <option value="textile">Textile</option>
                 <option value="sculpture">Sculpture</option>
