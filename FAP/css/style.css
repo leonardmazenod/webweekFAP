@@ -16,7 +16,7 @@
     background-size: 100vw;
 }
 
-/*Navbar*/
+/***** Navbar *****/
 
 header {
     position: fixed;
@@ -83,7 +83,7 @@ li img:hover {
     color: white;
 }
 
-/*Titre*/
+/***** Titre *****/
 
 .titre {
     color: #617A43;
@@ -125,7 +125,7 @@ button:hover {
     justify-content: space-between;
 }
 
-/*Sous-titre*/
+/***** Sous-titre *****/
 
 .sous-titre {
     display: flex;
@@ -141,7 +141,7 @@ h2 {
     margin: 80px 0;
 }
 
-/*carte*/
+/********** carte *********/
 
 .cartes {
     display: flex;
@@ -171,7 +171,7 @@ h4 {
     font-size: 50px;
     font-family: "engage";
     text-align: center;
-    padding: 50px 50px 50px 50px;
+    padding: 170px 50px 50px 50px;
 }
 .titre_1{
     display: flex;
@@ -182,22 +182,34 @@ h4 {
 }
 .descr_1{
     display: flex ;
-    padding: 50px 100px 0px 70px ;
+    padding: 50px 100px 50px 70px ;
     font-size: 35px;
     text-align: left;
 }
 .titre_2{
     display: flex;
-    padding: 50px 0px 0px 950px;
+    width: 50vw;
+    padding: 50px 0px 0px 850px;
     font-size: 45px;
     color: #617A43;
 }
 
 .descr_2{
-    display: flex ;
-    padding: 50px 100px 0px 400px ;
+    width: 60vw;
     font-size: 35px;
     text-align: right;
+    justify-content: space-around;
+    padding: 150px 100px 20px 10px ;
+  
+  }
+  .flex-photo_1{
+    display: flex;
+    padding: 10px 10px 10px 70px ;
+  }
+
+.flex-artisan {
+    display: flex;
+    padding: 50px 0px 50px 40px ;
 }
 .titre_3{
     display: flex;
@@ -208,21 +220,25 @@ h4 {
 
 .descr_3{
     display: flex ;
-    padding: 50px 100px 0px 70px ;
+    padding: 50px 100px 50px 70px ;
     font-size: 35px;
     text-align: left;
 }
 
 .titre_4{
     display: flex;
-    padding: 50px 0px 0px 950px;
+    padding: 50px 0px 0px 990px;
     font-size: 45px;
     color: #617A43;
 }
-
 .descr_4{
-    display: flex ;
-    padding: 50px 100px 0px 400px ;
     font-size: 35px;
     text-align: right;
-}
+    justify-content: space-around;
+    padding: 150px 100px 20px 10px ;
+  
+  }
+.flex-photo_2{
+    display: flex;
+    padding: 10px 10px 10px 70px ;
+  }
