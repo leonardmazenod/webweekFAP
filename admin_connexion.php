@@ -106,5 +106,7 @@ $nbevent=count($tab_event);
 				Redirection()
 				</script>';}
 	?>
+	<div><a href='admin.php'>
+	<button>Retour</button></a></div>
 	</body>
 </html>
