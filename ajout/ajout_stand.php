@@ -21,6 +21,13 @@
                 <option value="textile">Textile</option>
                 <option value="sculpture">Sculpture</option>
                 <option value="bois">Travail du bois et des plantes</option>
+                <option value="tufting">Tufting</option>
+		<option value="dentelle">Dentelle</option>
+		<option value="joallier">Joallier</option>
+		<option value="horloger">Horloger</option>
+		<option value="céramiste">Céramiste</option>
+		<option value="vitrailliste">Vitrailliste</option>
+		<option value="tanneur">Tanneur</option>		
                 <option value="autre">Autre</option>
                 </select>
 		</div><br/>
