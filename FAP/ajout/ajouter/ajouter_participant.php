@@ -1,4 +1,16 @@
-<?php
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../css/style.css"></link>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <title>Ajouter un participant</title>
+</head>
+<body>
+<?php include '../../navbar.php';
+
+
 $id_event=$_GET['id'];
 $connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 $nom=$_POST['nom']; 
@@ -18,7 +30,7 @@ $reqpreparee->bindParam(':tel_participant', $tel);
 $succes=$reqpreparee->execute();
 
 if($succes==true){
-	echo 'Inscription confirmée avec succès';
+	echo '<p>Inscription confirmée avec succès</p>';
 }
 
 // On récupére l'id du nouveau film que l'on vient d'ajouter  //
@@ -30,23 +42,14 @@ $reqpreparee->bindParam(':id_participant', $id_participant);
 $succes=$reqpreparee->execute();
 
 if($succes==true){
-	echo 'ok';
+	echo ' !';
 }
 
 ?>
 
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/style.css"></link>
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-  <title>Ajouter un participant</title>
-</head>
-<body>
-<?php include 'navbar.php'; ?>
+
 <form action="../../admin.php">
 	<input type="submit" class="btn btn-primary" value="Retourner à la page d'accueil !">
 </form>
 </body>
+

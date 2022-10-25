@@ -25,10 +25,13 @@
                         <a href="#">Carte</a>
                     </li>
                     <li>
+                        <a href="index.php">Accueil</a>
+                    </li>
+                    <li>
                         <a href="festival.php">Le festival</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                     <li>
                         <a class="inscription" href="#">Inscription</a>
@@ -36,12 +39,15 @@
                 </ul>
             </div>
 
-            <div class="sponsor">
-                <img src="img/Sponsor/Agglo-01.png" alt="">
-                <img src="img/Sponsor/chambre-des-metiers-01.png" alt="">
-                <img src="img/Sponsor/CreditAgricole-01.png" alt="">
-                <img src="img/Sponsor/LaRegion-01.png" alt="">
-                <img src="img/Sponsor/ministere-01.png" alt="">
+            <div class="sponsor-flex">
+                <button><a href="admin.php">admin</a></button>
+                <div class="sponsor">
+                    <img src="img/Sponsor/Agglo-01.png" alt="">
+                    <img src="img/Sponsor/chambre-des-metiers-01.png" alt="">
+                    <img src="img/Sponsor/CreditAgricole-01.png" alt="">
+                    <img src="img/Sponsor/LaRegion-01.png" alt="">
+                    <img src="img/Sponsor/ministere-01.png" alt="">
+                </div>
             </div>
         </footer>
     </body>

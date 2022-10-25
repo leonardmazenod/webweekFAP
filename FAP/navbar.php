@@ -16,10 +16,10 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="#">Programme</a>
+                        <a href="programme.php">Programme</a>
                     </li>
                     <li>
-                        <a href="#">Artisans</a>
+                        <a href="programme.php">Artisans</a>
                     </li>
                     <li>
                         <a href="#">Carte</a>
@@ -31,7 +31,7 @@
                         <a href="festival.php">Le festival</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                     <li>
                         <a class="inscription" href="#">Inscription</a>

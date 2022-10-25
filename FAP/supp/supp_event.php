@@ -6,7 +6,7 @@ $requete='DELETE FROM evenement WHERE id_event='.$id;
 $resultats = $bdd->query($requete) ;
 
 if ($resultats==true){
-	echo "L'événement a bien été supprimé de la base de donnée du site. ";
+	echo "L'événement a bien été supprimé de la base de donnée du site. <br/><br/>";
 }
 else { echo "L'événement n'a pas pu être supprimé."; }
 ?>
@@ -16,14 +16,12 @@ else { echo "L'événement n'a pas pu être supprimé."; }
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-  <title>Supprimer un événement</title>
+  <link rel="stylesheet" href="../css/style.css"></link>
+  <title>Supprimer un Événement</title>
 </head>
 <body>
-<?php include 'navbar.php'; ?>
 <form action="../admin.php">
-	<input type="submit" class="btn btn-primary" value="Retourner à la page d'accueil !">
+	<input type="submit" value="Retourner à la page d'accueil !">
 </form>
 </body>
 </html>
