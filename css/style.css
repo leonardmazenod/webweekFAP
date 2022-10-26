@@ -454,6 +454,25 @@ footer .nav a:hover {
     margin: 8px 0;
 }
 
+/****************************** PAGE ADMIN CONNEXION ******************************/
+
+.admin_connexion {
+    padding: 20vh 5vw 0 5vw ;
+}
+
+.admin_connexion * {
+    margin: 8px 0;
+}
+
+.admin_connexion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin_connexion h3 {
+    font-weight: 400;
+}
+
 /***************************** PAGE EVENEMENT *****************************/
 
 .evenement {
