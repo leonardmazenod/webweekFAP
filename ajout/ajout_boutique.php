@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="icon" href="../img/icon.png"/>
   <title>Ajout Boutique</title>
 </head>
 <body>
@@ -75,7 +76,7 @@
         
         <form action="../admin.php">
             <div>
-                <input type="submit" class="btn btn-primary" value="Annuler">
+                <input type="submit" class="btn btn-primary green" value="Annuler">
             </div>
         </form>
     </div>
