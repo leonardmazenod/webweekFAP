@@ -1,12 +1,19 @@
 <?php
 $id=$_GET['id'];
 $connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
-// Requete SQL pour recupérer les informations sur les événements
+// Requete SQL pour recupérer les informations sur l'événement voulu
 $requete="SELECT nomevent FROM evenement WHERE id_event=$id";
 $resultats=$connection->query($requete);
 $tab_event=$resultats->fetch();
 $resultats->closeCursor();
 
+$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+// Requete SQL pour recupérer les informations sur les événements où l'on peut s'incrire
+$requete="SELECT * FROM evenement WHERE nbplace>0";
+$resultats=$connection->query($requete);
+$tab_evenement=$resultats->fetchAll();
+$resultats->closeCursor();
+$nbevent=count($tab_evenement);
 ?>
 
 <!DOCTYPE html>
@@ -25,8 +32,25 @@ $resultats->closeCursor();
     ?>
 
 	<div class="page-inscription">
-		<h1>Inscription à l'événement : <?php echo $tab_event[0] ?>
-		<form method="POST" action="ajout/ajouter/ajouter_participant.php?id=<?php echo $id;?>">
+		<?php 
+		if ($id!=0){
+		echo '<h1>Inscription à l\'événement :'. $tab_event[0].'</h1>';
+		echo '<form method="POST" action="ajout/ajouter/ajouter_participant.php?id='.$id.'">';
+		}
+		else{
+			echo '<h1>Inscription :</h1>';
+			echo '<form method="POST" action="ajout/ajouter/ajouter_participant.php">';
+			echo '<div>
+			<label for="event">Événement : </label>
+			<select name="event" id="event">';
+			for ($i=0;$i<$nbevent;$i++){
+				echo "<option value=".$tab_evenement[$i]["id_event"].">".$tab_evenement[$i]["nomevent"]."</option>";
+			}
+			
+			echo'</select></div><br/>';
+		}
+
+		?>
 			<div>
 				<label for="nom">Nom : </label>
 				<input type="text" name="nom" id="nom" required="required" placeholder="Nom de famille">
@@ -48,7 +72,7 @@ $resultats->closeCursor();
 			</div>
 		</form>
 		<br/>
-		<form action="evenement.php">
+		<form action="programme.php">
 			<input type="submit" value="Annuler">
 		</form>
 	</div>
