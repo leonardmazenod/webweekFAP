@@ -20,7 +20,7 @@ $resultats->closeCursor();
 <body>
 	<?php
     include '../navbar.php';
-	echo '<h1 class="titre_3">Modification des informations du Stand : '.$tab[1].'</h1>';
+	echo '<div class="admin"><h1 class="titre_3">Modification des informations du Stand : '.$tab[1].'</h1>';
 	?>
 	<form method="POST" action="modifier/modifier_stand.php">
 		<?php
@@ -101,5 +101,7 @@ $resultats->closeCursor();
 	<form action="../admin.php">
 		<input type="submit" class="btn btn-primary green" value="Annuler">
 	</form>
+    </div>
 </body>
+<?php include '../footer.php'?>
 </html>
