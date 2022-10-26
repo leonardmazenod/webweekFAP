@@ -11,7 +11,7 @@
     <?php include '../navbar.php'; ?>
     <div class="admin">
         <h1 class="titre_3">Ajout d'une Boutique :</h1>
-        <form method="POST" action="ajouter/ajouter_boutique.php" enctype="multipart/form-data">
+        <form method="POST" action="ajouter/ajouter_boutique.php" enctype='multipart/form-data'>
             <div class="row g-3">
                 <div class="col-md-4">
                     <label for="nom">Nom de la boutique : </label>
@@ -65,8 +65,8 @@
                     <input type="text" name="tel" id="tel" class="form-control" required="required" value="0601020304">
                 </div>
                 <div class="col-md-4">
-                    <label for="img">Image de la Boutique : </label>
-                    <input type="file" name="img" id="img" class="form-control" required="required">
+                    <label for="fichier">Image de la Boutique : </label>
+                    <input type="file" name="fichier" id="fichier" class="form-control" required="required">
                 </div>
             </div>
             <div>
