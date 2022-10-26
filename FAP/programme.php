@@ -1,4 +1,6 @@
 <?php
+// Navbar 
+include("navbar.php"); 
 
 include "class.php";
 
@@ -53,6 +55,8 @@ for ($i=0;$i<$nbstand;$i++){
     $liste_stand[$i]->affiche_stand();
 }
 
-
+//footer
+    include("footer.php"); 
 ?>
+
 
