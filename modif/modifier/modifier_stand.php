@@ -1,4 +1,16 @@
-<?php
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="../../img/icon.png"/>
+  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <title>Modifier un stand</title>
+</head>
+<body>
+    <?php
+    include '../../navbar.php';
+
 $id=$_POST['id'];
 $bdd=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 // Requête qui permet d'obtenir une liste avec toutes les informations sur le stand que l'ont a choisie // 
@@ -72,21 +84,9 @@ if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de l'image d
 else { echo "<p>Echec de la mise à jour de l'image de la stand : </p>" . mysqli_error($connection)."</br>"; }}
     
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
-  <title>Modifier un stand</title>
-</head>
-<body>
-    <?php
-    include 'navbar.php';
-?>
 <form action="../../admin.php">
 	<input type="submit" class="btn btn-primary green" value="Retourner à la page d'acceuil !">
 </form>
 </body>
+	<?php include("../../footer.php"); ?>
 </html>
