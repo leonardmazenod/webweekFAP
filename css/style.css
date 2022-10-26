@@ -477,7 +477,15 @@ footer .nav a:hover {
 .evenement {
     padding: 15vh 5vw 0 5vw ;
 }
-
+.evenement li {
+    list-style-type: none;
+}
+.evenement h2 {
+    font-size: 150%;
+}
+.evenement div {
+    margin: 10px 0px;
+}
 /****************************** PAGE INSCRIPTION ******************************/
 
 .page-inscription {
