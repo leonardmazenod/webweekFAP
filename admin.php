@@ -56,7 +56,7 @@ $nbadmin=count($tab);
                     ?>
                     <!-- Bouton de connexion -->
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Se connecter</button>
+                        <button type="submit" class="btn btn-primary green">Se connecter</button>
                     </div>
                 </div>
             </form>
