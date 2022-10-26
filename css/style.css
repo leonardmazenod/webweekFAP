@@ -48,7 +48,12 @@ textarea {
 }
 
 .green  {
-    background-color:#617A43; 
+    background-color:#617A43;
+    border-color: #617A43;
+}
+.green:hover {
+    background-color:#779651;
+    border-color: #779651;
 }
 
 /****************************** PAGE D'ACCUEIL ******************************/
