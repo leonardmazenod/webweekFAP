@@ -1,4 +1,6 @@
 <?php
+// Navbar 
+include("navbar.php"); 
 
 include "class.php";
 
@@ -36,7 +38,7 @@ for ($i=0;$i<$nbevent;$i++){
     $tab_participant=$resultats->fetchAll();
     $resultats->closeCursor();
     $nbparticipant=count($tab_participant);
-    
+
     $liste_event[$i]=new Evenement ($tab_event[$i][1],$tab_event[$i][2],$tab_event[$i][3],$tab_event[$i][4],$tab_event[$i][5],$tab_event[$i][6],$tab_event[$i][7],$tab_event[$i][8],$tab_event[$i][0]);
     $liste_event[$i]->affiche_event($nbparticipant);
 }
@@ -53,6 +55,8 @@ for ($i=0;$i<$nbstand;$i++){
     $liste_stand[$i]->affiche_stand();
 }
 
-
+//footer
+    include("footer.php"); 
 ?>
+
 
