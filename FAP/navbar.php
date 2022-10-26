@@ -31,10 +31,10 @@
                         <a href="'.$lien.'programme.php">Programme</a>
                     </li>
                     <li>
-                        <a href="'.$lien.'programme.php">Artisans</a>
+                        <a href="'.$lien.'programme.php#artisans">Artisans</a>
                     </li>
                     <li>
-                        <a href="'.$lien.'#">Carte</a>
+                        <a href="'.$lien.'index.php#map">Carte</a>
                     </li>
                     <li>
                         <a href="'.$lien.'index.php"><img src="'.$lien.'img/logo.png" alt="logo"/></i></a>
