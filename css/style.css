@@ -24,6 +24,12 @@ h1 {
     font-size: 2vw;
 }
 
+h2 {
+    font-size: 48px;
+    text-transform:uppercase;
+    color: #617A43;
+}
+
 h3 {
     font-size: 34px;
     margin: 0 0 30px 0;
@@ -106,9 +112,6 @@ button:hover {
 }
 
 .Article h2 {
-    font-size: 48px;
-    text-transform:uppercase;
-    color: #617A43;
     margin: 100px 10vw 80px 0;
 }
 
@@ -200,32 +203,16 @@ button:hover {
     box-shadow: 5px;
     margin-top: auto;
     justify-content: center;
-    margin: 100px 5vw 100px 5vw ;
+    margin: 10px 5vw 100px 5vw ;
   }
 
 .carte-flex{
   display: flex;
 }
 
-/********** cartes artisans *********/
-
-.cartes {
-    display: flex;
-    margin: 100px 5vw 0 5vw;
-}
-
-.carte {
-    margin:2vw
-}
-
-.sous-texte {
-    margin: 5px 20px;
-}
-
-
-.carte a {
-    color:#617A43;
-}
+#map-titre{
+    margin: 0 5vw 0 5vw;
+  }
 
 /****************************** PAGE NAVBAR ******************************/
 
