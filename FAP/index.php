@@ -56,7 +56,7 @@
 
   <script src="./assets/jquery.min.js" type="text/javascript" ></script>
   <script src="node_modules/swiper/js/swiper.min.js"></script>
-  <script src="script.js" type="text/javascript" ></script>
+  <script src="JS/carousel.js" type="text/javascript" ></script>
 
     <!-- Cartes -->
     <div class="cartes">
