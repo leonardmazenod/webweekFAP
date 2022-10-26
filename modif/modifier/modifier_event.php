@@ -72,7 +72,7 @@ else { echo "<p>Echec de la mise à jour de l'image de l'event : </p>" . mysqli_
     include 'navbar.php';
 ?>
 <form action="../../admin.php">
-    <input type="submit" class="btn btn-primary" value="Retourner à la page d'acceuil !">
+    <input type="submit" class="btn btn-primary green" value="Retourner à la page d'acceuil !">
 </form>
 </body>
 </html>
