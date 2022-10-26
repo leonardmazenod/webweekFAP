@@ -56,7 +56,7 @@ Class Boutique extends Commerce{
     }
 
     public function affiche_boutique(){
-        echo"<h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Téléphone de la Boutique : ".$this->telboutique."</li></ul>";
+        echo"<div><h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Téléphone de la Boutique : ".$this->telboutique."</li></ul></div>";
     }
 }
 
@@ -69,7 +69,7 @@ Class Stand extends Commerce{
     }
 
     public function affiche_stand(){
-        echo"<h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Type d'emplacement du stand : ".$this->emplacement."</li></ul>";
+        echo"<div><h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Type d'emplacement du stand : ".$this->emplacement."</li></ul></div>";
     }
 }
 
@@ -88,12 +88,12 @@ Class Evenement extends Atelier{
     }
 
     public function affiche_event($object){
-        echo"<h3>".$this->nom.": </h3><ul><li>Description : ".$this->description."</li><li>Début : ".$this->duree."</li><li>Durée : ".$this->debutevent."</li></ul>";
+        echo"<div><h3>".$this->nom.": </h3><ul><li>Description : ".$this->description."</li><li>Début : ".$this->duree."</li><li>Durée : ".$this->debutevent."</li></ul>";
         if ($this->nbplace>0){
-            echo "<a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a><a> Place restante : ".$this->nbplace-$object."</a>";
+            echo "<a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a> <a>  Place restante : ".$this->nbplace-$object."</a></div>";
         }
         else{
-            echo "Il n'y a pas besoin de s'inscrire pour assister à cet événement. (Il ce peut aussi qu'il n'y est plus de place pour cette événement)";
+            echo "Il n'y a pas besoin de s'inscrire pour assister à cet événement. (Il se peut aussi qu'il n'y ait plus de place pour cet événement)</div>";
         }
     }
 
@@ -126,4 +126,3 @@ Class Participant{
 }
 
 ?>
-
