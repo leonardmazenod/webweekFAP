@@ -13,13 +13,13 @@ $resultats->closeCursor();
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../img/icon.png"/>
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
   <title>Modification stand</title>
 </head>
 <body>
 	<?php
-    include 'navbar.php';
+    include '../navbar.php';
 	echo '<h1 class="titre_3">Modification des informations du Stand : '.$tab[1].'</h1>';
 	?>
 	<form method="POST" action="modifier/modifier_stand.php">
