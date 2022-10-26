@@ -38,6 +38,25 @@
             <button>en savoir plus sur le festival</button>
         </div>
     </div>
+    
+    <!-- carousels-->
+
+    <h1 class="fap"> Festival des artisants </h1>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: url(./img/bois.jpg) center/cover;"></div>
+      <div class="swiper-slide" style="background: url(./img/verre.jpg) center/cover;"></div>
+      <div class="swiper-slide" style="background: url(./img/dentelle.jpg) center/cover;"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+   
+
+
+  <script src="./assets/jquery.min.js" type="text/javascript" ></script>
+  <script src="node_modules/swiper/js/swiper.min.js"></script>
+  <script src="script.js" type="text/javascript" ></script>
 
     <!-- Cartes -->
     <div class="cartes">
