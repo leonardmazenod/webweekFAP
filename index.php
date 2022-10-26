@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Festival de l'Artisanat au Puy</title>
         <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
         <link rel="stylesheet" href="css/style.css"/>
         <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
@@ -39,33 +40,26 @@
         </div>
     </div>
 
-    <!-- Cartes -->
-    <div class="cartes">
-        <div class="carte">
-            <img src="img/1.png" alt="Céramiste">
-            <div class="sous-texte">
-                <h4>Céramiste</h4>
-                <p>George Rempart</br>retrouvé le à son atelier</br>de 8h à 19h du samedi au lundi</p>
-                <a href="#">voir plus</a>
-            </div>
-        </div>
-        <div class="carte">
-            <img src="img/1.png" alt="Céramiste">
-            <div class="sous-texte">
-                <h4>Céramiste</h4>
-                <p>George Rempart</br>retrouvé le à son atelier</br>de 8h à 19h du samedi au lundi</p>
-                <a href="#">voir plus</a>
-            </div>
-        </div>
-        <div class="carte">
-            <img src="img/1.png" alt="Céramiste">
-            <div class="sous-texte">
-                <h4>Céramiste</h4>
-                <p>George Rempart</br>retrouvé le à son atelier</br>de 8h à 19h du samedi au lundi</p>
-                <a href="#">voir plus</a>
-            </div>
-        </div>
+     <!-- carousels-->
+
+    <h1 class="fap"> Festival de l'artisanat </h1>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: url(./img/bois.jpg) center/cover;"></div>
+      <div class="swiper-slide" style="background: url(./img/verre.jpg) center/cover;"> </div>
+      <div class="swiper-slide" style="background: url(./img/dentelle.jpg) center/cover;"> </div>
     </div>
+    <div class="swiper-pagination"></div>
+  </div>
+   
+
+
+  <script src="./assets/jquery.min.js" type="text/javascript" ></script>
+  <script src="node_modules/swiper/js/swiper.min.js"></script>
+  <script src="js/carousel.js" type="text/javascript" ></script>
+
+        <br><br><br>
 
     <div class="carte-flex">
             <div id="map" class="mapContainer"><script src="js/carte.js"></script></div>
