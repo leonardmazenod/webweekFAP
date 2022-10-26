@@ -56,7 +56,7 @@ Class Boutique extends Commerce{
     }
 
     public function affiche_boutique(){
-        echo"<div><h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Téléphone de la Boutique : ".$this->telboutique."</li></ul></div>";
+        echo"<h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Téléphone de la Boutique : ".$this->telboutique."</li></ul><img alt='image de la boutique ".$this->nom."' src='".$this->img."' height=200px width=auto>";
     }
 }
 
@@ -69,7 +69,7 @@ Class Stand extends Commerce{
     }
 
     public function affiche_stand(){
-        echo"<div><h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Type d'emplacement du stand : ".$this->emplacement."</li></ul></div>";
+        echo"<h3>".$this->nom."</h3><ul><li>Description : ".$this->description."</li><li>Type : ".$this->type."</li><li>Horaire d'ouverture : ".$this->ouverture."</li><li>Horaire de fermeture : ".$this->fermeture."</li><li>Type d'emplacement du stand : ".$this->emplacement."</li></ul><img alt='image de la boutique ".$this->nom."' src='".$this->img."' height=200px width=auto>";
     }
 }
 
@@ -88,12 +88,12 @@ Class Evenement extends Atelier{
     }
 
     public function affiche_event($object){
-        echo"<div><h3>".$this->nom.": </h3><ul><li>Description : ".$this->description."</li><li>Début : ".$this->duree."</li><li>Durée : ".$this->debutevent."</li></ul>";
+        echo"<h3>".$this->nom.": </h3><ul><li>Description : ".$this->description."</li><li>Début : ".$this->duree."</li><li>Durée : ".$this->debutevent."</li></ul><img alt='image de la boutique ".$this->nom."' src='".$this->img."' height=200px width=auto>";
         if ($this->nbplace>0){
-            echo "<a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a> <a>  Place restante : ".$this->nbplace-$object."</a></div>";
+            echo "<a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a><a> Place restante : ".$this->nbplace-$object."</a>";
         }
         else{
-            echo "Il n'y a pas besoin de s'inscrire pour assister à cet événement. (Il se peut aussi qu'il n'y ait plus de place pour cet événement)</div>";
+            echo "Il n'y a pas besoin de s'inscrire pour assister à cet événement. (Il ce peut aussi qu'il n'y est plus de place pour cette événement)";
         }
     }
 
@@ -126,3 +126,4 @@ Class Participant{
 }
 
 ?>
+
