@@ -60,7 +60,8 @@
   <script src="js/carousel.js" type="text/javascript" ></script>
 
         <br><br><br>
-
+    
+    <h2 id="map-titre">Carte</h2>
     <div class="carte-flex">
             <div id="map" class="mapContainer"><script src="js/carte.js"></script></div>
         </div>
