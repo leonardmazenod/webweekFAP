@@ -29,6 +29,19 @@
         </div>
     </div>
 
+    <!-- carousels-->
+
+    <h1 class="fap"> Nos meilleurs artisans </h1>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: url(./img/bois.jpg) center/cover;"></div>
+      <div class="swiper-slide" style="background: url(./img/verre.jpg) center/cover;"> </div>
+      <div class="swiper-slide" style="background: url(./img/dentelle.jpg) center/cover;"> </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
     <!-- Article -->
     <div class="Article">
         <h2>Des artisants de toute l’Europe se réunissent pour tenir un festival au Puy-en-Velay du 8 au 10 avril 2023</h2>
@@ -39,19 +52,6 @@
             <button>en savoir plus sur le festival</button>
         </div>
     </div>
-
-     <!-- carousels-->
-
-    <h1 class="fap"> Festival de l'artisanat </h1>
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background: url(./img/bois.jpg) center/cover;"></div>
-      <div class="swiper-slide" style="background: url(./img/verre.jpg) center/cover;"> </div>
-      <div class="swiper-slide" style="background: url(./img/dentelle.jpg) center/cover;"> </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
    
 
 
