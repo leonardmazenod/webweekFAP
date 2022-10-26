@@ -46,7 +46,7 @@
                         <a href="'.$lien.'contact.php">Contact</a>
                     </li>
                     <li>
-                        <a class="inscription" href="'.$lien.'#">Inscription</a>
+                        <a class="inscription" href="inscription.php?id=0">Inscription</a>
                     </li>'
                     ?>
                 </ul>
