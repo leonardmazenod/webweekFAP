@@ -41,9 +41,9 @@ $nbevent=count($tab_evenement);
 		else{
 			echo '<h1>Inscription :</h1>';
 			echo '<form method="POST" action="ajout/ajouter/ajouter_participant.php">';
-			echo '<div>
+			echo '<div class="col-md-8">
 			<label for="event">Événement : </label>
-			<select name="event" id="event">';
+			<select name="event" class="form-select" id="event">';
 			for ($i=0;$i<$nbevent;$i++){
 				echo "<option value=".$tab_evenement[$i]["id_event"].">".$tab_evenement[$i]["nomevent"]."</option>";
 			}
