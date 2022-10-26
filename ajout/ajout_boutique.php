@@ -69,13 +69,13 @@
                 </div>
             </div>
             <div>
-                <input type="submit" class="btn btn-primary" value="Ajouter la Boutique !">
+                <input type="submit" class="btn btn-primary green" value="Ajouter la Boutique !">
             </div>
         </form>
         
         <form action="../admin.php">
             <div>
-                <input type="submit" class="btn btn-primary" value="Annuler">
+                <input type="submit" class="btn btn-primary green" value="Annuler">
             </div>
         </form>
     </div>
