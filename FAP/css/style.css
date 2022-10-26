@@ -47,6 +47,10 @@ textarea {
     margin: 5px 0px;
 }
 
+.green  {
+    background-color:#617A43; 
+}
+
 /****************************** PAGE D'ACCUEIL ******************************/
 
 * >.index {
@@ -186,12 +190,12 @@ button:hover {
 
 .mapContainer {
     display: flex;
-    height: 100vh;
-    width: 100vw;
+    height: 60vh;
+    width: 60vw;
     box-shadow: 5px;
     margin-top: auto;
     justify-content: center;
-    padding: 2% 2% 2% 2% ;
+    margin: 100px 5vw 100px 5vw ;
   }
 
 .carte-flex{
