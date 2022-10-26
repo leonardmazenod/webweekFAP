@@ -61,10 +61,6 @@ $nbevent=count($tab_event);
 				// On commence par créer le bouton pour modifier
 					echo "<a href='modif/modif_event.php?id=".$tab_event[$i]["id_event"]."'>
 					<button>Modifier</button></a>";
-					if ($tab[$login]['login']=="admin_fap_all_right"){ // On regarde quel admin est connecté est selon ces droit on lui affiche les boutons
-				// Puis on créer le bouton pour supprimer
-					echo "<a href='supp/supp_event.php?id=".$tab_event[$i]["id_event"]."'>
-					<button>Supprimer</button></a>" ;}
 				// On regarde si l'événment propose de s'inscrire puis si c'ets le cas on demande si l'admin veut voir la liste de tout les participants
 					if ($tab_event[$i]["nbplace"]>0){
 					echo "<a href='liste_participant.php?id=".$tab_event[$i]["id_event"]."'>
