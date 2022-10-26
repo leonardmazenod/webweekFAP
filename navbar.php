@@ -34,7 +34,7 @@
                         <a href="'.$lien.'evenement.php#artisans">Artisans</a>
                     </li>
                     <li>
-                        <a href="'.$lien.'index.php#map">Carte</a>
+                        <a href="'.$lien.'index.php#map-titre">Carte</a>
                     </li>
                     <li>
                         <a href="'.$lien.'index.php"><img src="'.$lien.'img/logo.png" alt="logo"/></i></a>
