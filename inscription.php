@@ -23,6 +23,7 @@ $nbevent=count($tab_evenement);
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <title>Inscription</title>
 </head>
 <body>
@@ -47,38 +48,41 @@ $nbevent=count($tab_evenement);
 				echo "<option value=".$tab_evenement[$i]["id_event"].">".$tab_evenement[$i]["nomevent"]."</option>";
 			}
 			
-			echo'</select></div><br/>';
+			echo'</select></div>';
 		}
 
 		?>
-			<div>
+		<div class="row gd-3">
+			<div class="col-md-4">
 				<label for="nom">Nom : </label>
-				<input type="text" name="nom" id="nom" required="required" placeholder="Nom de famille">
-			</div><br/>
-			<div>
+				<input type="text" name="nom" id="nom" class="form-control" required="required" placeholder="Nom de famille">
+			</div>
+			<div class="col-md-4">
 				<label for="prenom">Prénom : </label>
-				<input type="text" name="prenom" id="prenom" required="required" placeholder="Prénom">	
-			</div><br/>
+				<input type="text" name="prenom" id="prenom" class="form-control" required="required" placeholder="Prénom">	
+			</div>
+		</div>
+		<div class="row gd-3">
+			<div class="col-md-4">
+				<label for="email">E-mail : </label>
+				<input type="text" name="email" id="email" class="form-control" required="required" placeholder="adresse@mail.com">
+			</div>
+			<div class="col-md-4">
+				<label for="tel">Téléphone : </label>
+				<input type="text" id="tel" name="tel" class="form-control" required="required" placeholder="0601020304">
+			</div>
+		</div>
 			<div>
-			<label for="email">E-mail : </label>
-				<input type="text" name="email" id="email" required="required" placeholder="adresse@mail.com">
-			</div><br/>
-			<div>
-			<label for="tel">Téléphone : </label>
-				<input type="text" id="tel" name="tel" required="required" placeholder="0601020304">
-			</div><br/>
-			<div>
-				<input type="submit" value="Confirmer l'incription">
+				<input type="submit" class="btn btn-primary green" value="Confirmer l'incription">
 			</div>
 		</form>
-		<br/>
 		<form action="programme.php">
-			<input type="submit" value="Annuler">
+			<div>
+			<input type="submit" class="btn btn-primary green" value="Annuler">
+			</div>
 		</form>
 	</div>
 	  <!-- Footer -->
-	  <?php 
-        include("footer.php"); 
-    ?>
+	  <?php include("footer.php"); ?>
 </body>
 </html>
