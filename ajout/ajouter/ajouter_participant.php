@@ -10,8 +10,13 @@
 <body>
 <?php include '../../navbar.php';
 
+if (isset($_GET['id'])){
+  $id_event=$_GET['id'];
+}
+else{
+  $id_event=$_POST['event'];
+}
 
-$id_event=$_GET['id'];
 $connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 $nom=$_POST['nom']; 
 $prenom=$_POST['prenom']; 
@@ -49,7 +54,7 @@ if($succes==true){
 
 
 <form action="../../admin.php">
-	<input type="submit" class="btn btn-primary green" value="Retourner à la page d'accueil !">
+	<input type="submit" class="btn btn-primary" value="Retourner à la page d'accueil !">
 </form>
 </body>
 <?php include '../../footer.php'; ?>
