@@ -47,21 +47,22 @@
                         <a href="'.$lien.'contact.php">Contact</a>
                     </li>
                     <li>
-                        <a class="inscription" href="inscription.php?id=0">Inscription</a>
-                    </li>'
-                    ?>
+                        <a class="inscription" href="'.$lien.'inscription.php?id=0">Inscription</a>
+                    </li>
+                    
                 </ul>
                 </div>
 
             <div class="sponsor-flex">
-                <button><a href="admin.php">admin</a></button>
+                <button><a href="'.$lien.'admin.php">admin</a></button>
                 <div class="sponsor">
-                    <img src="img/Sponsor/Agglo-01.png" alt="">
-                    <img src="img/Sponsor/chambre-des-metiers-01.png" alt="">
-                    <img src="img/Sponsor/CreditAgricole-01.png" alt="">
-                    <img src="img/Sponsor/LaRegion-01.png" alt="">
-                    <img src="img/Sponsor/ministere-01.png" alt="">
+                    <img src="'.$lien.'img/Sponsor/Agglo-01.png" alt="">
+                    <img src="'.$lien.'img/Sponsor/chambre-des-metiers-01.png" alt="">
+                    <img src="'.$lien.'img/Sponsor/CreditAgricole-01.png" alt="">
+                    <img src="'.$lien.'img/Sponsor/LaRegion-01.png" alt="">
+                    <img src="'.$lien.'img/Sponsor/ministere-01.png" alt="">
                 </div>
-            </div>
+            </div>'
+            ?>
         </footer>
     </body>
