@@ -14,12 +14,12 @@ $resultats->closeCursor();
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/icon.png"/>
     <title>Modifier Boutique</title>
 </head>
 <body>
     <?php
-    include 'navbar.php';
+    include '../navbar.php';
 	echo '<h1 class="titre_3">Modification des informations de la Boutique : '.$tab[1].'</h1>';
 	?>
 	<form method="POST" action="modifier/modifier_boutique.php">
