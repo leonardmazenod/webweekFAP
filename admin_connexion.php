@@ -38,7 +38,7 @@ $nbevent=count($tab_event);
         <!-- Encodage -->
         <meta charset="utf-8">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/icon.jpg">
     </head>
 
 	<body>
