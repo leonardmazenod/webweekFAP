@@ -152,10 +152,9 @@ button:hover {
     min-width: 400px;
     left: 50%;
     transform: translateX(-50%);
-    text-transform: uppercase;
     letter-spacing: .3.5rem;
     mix-blend-mode: difference;
-    color : rgb(255, 113, 78);
+    color :#f7f1f0;
     font-size: 2.5rem;
     text-shadow: 2px 2px 2px #333;
     line-height: 6rem;
@@ -163,7 +162,7 @@ button:hover {
   }
  
   .swiper-container {
-      padding: 5% 0% 0% 0%;
+    padding: 5% 0% 0% 0%;
     width: 89.1vw;
     height: 35vw;
   }
@@ -198,7 +197,7 @@ button:hover {
   }
   .swiper-pagination-bullet-active {
     color:#fff;
-    background: orange;
+    background:#617A43;
   }
 
 /********** carte ************/
