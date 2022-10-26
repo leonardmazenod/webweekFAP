@@ -49,7 +49,7 @@ if($succes==true){
 
 
 <form action="../../admin.php">
-	<input type="submit" class="btn btn-primary" value="Retourner à la page d'accueil !">
+	<input type="submit" class="btn btn-primary green" value="Retourner à la page d'accueil !">
 </form>
 </body>
 <?php include '../../footer.php'; ?>
