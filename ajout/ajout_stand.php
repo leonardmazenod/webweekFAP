@@ -67,13 +67,13 @@
 			</div>
 		</div>
 			<div>
-				<input type="submit" class="btn btn-primary" value="Ajouter le stand !">
+				<input type="submit" class="btn btn-primary green" value="Ajouter le stand !">
 			</div>
 		</form>
 		
 		<form action="../admin.php">
 			<div>
-				<input type="submit" class="btn btn-primary" value="Annuler">
+				<input type="submit" class="btn btn-primary green" value="Annuler">
 			</div>
 		</form>
 	</div>
