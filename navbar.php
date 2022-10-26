@@ -28,10 +28,10 @@
                 <ul>
                 <?php
                 echo'<li>
-                        <a href="'.$lien.'programme.php">Programme</a>
+                        <a href="'.$lien.'evenement.php">Evènements</a>
                     </li>
                     <li>
-                        <a href="'.$lien.'programme.php#artisans">Artisans</a>
+                        <a href="'.$lien.'evenement.php#artisans">Artisans</a>
                     </li>
                     <li>
                         <a href="'.$lien.'index.php#map">Carte</a>

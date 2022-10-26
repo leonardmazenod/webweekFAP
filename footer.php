@@ -6,38 +6,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Festival de l'Artisanat au Puy</title>
         <link rel="icon" href="img/icon.png">
+        <?php
+        if (file_exists("css/style.css")==1){
+            $lien="";
+        }
+        elseif (file_exists("../css/style.css")==1){
+            $lien="../";
+        }
+        elseif (file_exists("../../css/style.css")==1){
+            $lien="../../";
+        }
+        echo '<link rel="stylesheet" href="'.$lien.'css/style.css">';
+        ?>
         <link rel="stylesheet" href="css/style.css">
         <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
     </head>
     <body>
         <footer>
-            <!-- Navbar -->
-            <div class="nav">
+        <!-- Navbar -->
+        <div class="nav">
                 <ul>
-                    <li>
-                        <a href="#">Programme</a>
+                <?php
+                echo'<li>
+                        <a href="'.$lien.'evenement.php">Evènements</a>
                     </li>
                     <li>
-                        <a href="#">Artisans</a>
+                        <a href="'.$lien.'evenement.php#artisans">Artisans</a>
                     </li>
                     <li>
-                        <a href="#">Carte</a>
+                        <a href="'.$lien.'index.php#map">Carte</a>
                     </li>
                     <li>
-                        <a href="index.php">Accueil</a>
+                        <a href="'.$lien.'index.php">Accueil</a>
                     </li>
                     <li>
-                        <a href="festival.php">Le festival</a>
+                        <a href="'.$lien.'festival.php">Le festival</a>
                     </li>
                     <li>
-                        <a href="contact.php">Contact</a>
+                        <a href="'.$lien.'contact.php">Contact</a>
                     </li>
                     <li>
-                        <a class="inscription" href="#">Inscription</a>
-                    </li>
+                        <a class="inscription" href="inscription.php?id=0">Inscription</a>
+                    </li>'
+                    ?>
                 </ul>
-            </div>
+                </div>
 
             <div class="sponsor-flex">
                 <button><a href="admin.php">admin</a></button>

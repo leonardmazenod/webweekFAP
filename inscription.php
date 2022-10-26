@@ -48,7 +48,7 @@ $resultats->closeCursor();
 			</div>
 		</form>
 		<br/>
-		<form action="programme.php">
+		<form action="evenement.php">
 			<input type="submit" value="Annuler">
 		</form>
 	</div>
