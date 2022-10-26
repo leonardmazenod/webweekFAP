@@ -24,8 +24,8 @@ $resultats->closeCursor();
         include("navbar.php"); 
     ?>
 
-	<div class="pinscription">
-		<h1>Inscription à l'événement :<?php echo $tab_event[0] ?></h1>
+	<div class="page-inscription">
+		<h1>Inscription à l'événement : <?php echo $tab_event[0] ?>
 		<form method="POST" action="ajout/ajouter/ajouter_participant.php?id=<?php echo $id;?>">
 			<div>
 				<label for="nom">Nom : </label>
