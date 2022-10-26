@@ -10,7 +10,7 @@
     <?php include '../navbar.php'; ?>
     <div class="admin">
         <h1 class="titre_3">Ajout d'une Boutique :</h1>
-        <form method="POST" action="ajouter/ajouter_boutique.php">
+        <form method="POST" action="ajouter/ajouter_boutique.php" enctype="multipart/form-data">
             <div class="row g-3">
                 <div class="col-md-4">
                     <label for="nom">Nom de la boutique : </label>
@@ -69,13 +69,13 @@
                 </div>
             </div>
             <div>
-                <input type="submit" class="btn btn-primary green" value="Ajouter la Boutique !">
+                <input type="submit" class="btn btn-primary" value="Ajouter la Boutique !">
             </div>
         </form>
         
         <form action="../admin.php">
             <div>
-                <input type="submit" class="btn btn-primary green" value="Annuler">
+                <input type="submit" class="btn btn-primary" value="Annuler">
             </div>
         </form>
     </div>
