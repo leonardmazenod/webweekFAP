@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Festival de l'Artisanat au Puy</title>
         <link rel="icon" href="img/icon.png"/>
-        <link rel="stylesheet" href="./node_modules/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="js/swiper.min.css">
         <link rel="stylesheet" href="css/style.css"/>
         <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
