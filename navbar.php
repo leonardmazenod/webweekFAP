@@ -28,7 +28,7 @@
                 <ul>
                 <?php
                 echo'<li>
-                        <a href="'.$lien.'evenement.php">Programme</a>
+                        <a href="'.$lien.'evenement.php">Evènements</a>
                     </li>
                     <li>
                         <a href="'.$lien.'evenement.php#artisans">Artisans</a>
