@@ -97,12 +97,12 @@ $resultats->closeCursor();
             </div>
         </div>
 		<div class="col-md-4">
-			<input type="submit" class="btn btn-primary" value="Modifier les informations de la Boutique !">
+			<input type="submit" class="btn btn-primary green" value="Modifier les informations de la Boutique !">
 		</div>
 	</form>
 	
 	<form action="../admin.php">
-		<input type="submit" class="btn btn-primary" value="Annuler">
+		<input type="submit" class="btn btn-primary green" value="Annuler">
 	</form>
 </body>
 </html>
