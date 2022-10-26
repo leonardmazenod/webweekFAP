@@ -1,4 +1,14 @@
-<?php
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <title>Supprimer un Événement</title>
+</head>
+<body>
+<?php include '../navbar.php' 
+
 $id=$_GET['id'];
 $bdd=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 // Requête pour supprimer l'évenement que l'on a choisie ( a l'aide d'un bouton disponible sur sa page admin)//
@@ -6,22 +16,13 @@ $requete='DELETE FROM evenement WHERE id_event='.$id;
 $resultats = $bdd->query($requete) ;
 
 if ($resultats==true){
-	echo "L'événement a bien été supprimé de la base de donnée du site. <br/><br/>";
+	echo "<p>L'événement a bien été supprimé de la base de donnée du site. </p>";
 }
-else { echo "L'événement n'a pas pu être supprimé."; }
+else { echo "<p>L'événement n'a pas pu être supprimé.</p>"; }
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/style.css"></link>
-  <title>Supprimer un Événement</title>
-</head>
-<body>
 <form action="../admin.php">
-	<input type="submit" value="Retourner à la page d'accueil !">
+	<input type="submit" class="btn btn-primary green" value="Retourner à la page d'accueil !">
 </form>
 </body>
+<?php include '../footer.php' ?>
 </html>
