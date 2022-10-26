@@ -82,5 +82,3 @@ $nbevent=count($tab_event);
 //footer
     include("footer.php"); 
 ?>
-
-
