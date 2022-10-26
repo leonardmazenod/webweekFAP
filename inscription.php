@@ -76,7 +76,7 @@ $nbevent=count($tab_evenement);
 				<input type="submit" class="btn btn-primary green" value="Confirmer l'incription">
 			</div>
 		</form>
-		<form action="programme.php">
+		<form action="evenement.php">
 			<div>
 			<input type="submit" class="btn btn-primary green" value="Annuler">
 			</div>
