@@ -5,8 +5,8 @@
         <meta name="viewport" content=width=device-width, initial-scale=1>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Festival de l'Artisanat au Puy</title>
-        <link rel="icon" href="img/icon.png">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/icon.png"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
@@ -38,25 +38,6 @@
             <button>en savoir plus sur le festival</button>
         </div>
     </div>
-    
-    <!-- carousels-->
-
-    <h1 class="fap"> Festival des artisants </h1>
-
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background: url(./img/bois.jpg) center/cover;"></div>
-      <div class="swiper-slide" style="background: url(./img/verre.jpg) center/cover;"></div>
-      <div class="swiper-slide" style="background: url(./img/dentelle.jpg) center/cover;"></div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-   
-
-
-  <script src="./assets/jquery.min.js" type="text/javascript" ></script>
-  <script src="node_modules/swiper/js/swiper.min.js"></script>
-  <script src="JS/carousel.js" type="text/javascript" ></script>
 
     <!-- Cartes -->
     <div class="cartes">
