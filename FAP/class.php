@@ -99,12 +99,8 @@ Class Evenement extends Atelier{
 
     public function creeparticipants($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant){
         $participant= new Participant($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant);
+        $participant->affiche_participant();
     }
-
-    public function affiche(){
-
-    }
-
 }
 
 
@@ -115,7 +111,7 @@ Class Participant{
     public $emailparticipant="";
     public $telparticipant="";
 
-    public function __construct($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant,$nbplace){
+    public function __construct($nomparticipant,$prenomparticipant,$emailparticipant,$telparticipant){
         $this->nomparticipant=$nomparticipant;
         $this->prenomparticipant=$prenomparticipant;
         $this->emailparticipant=$emailparticipant;
@@ -123,8 +119,8 @@ Class Participant{
         
     }
 
-    public function affiche_event(){
-        echo"<h2>Participant : </h2><ul><li>Nom : ".$this->nomparticipant."</li><li>Prénom : ".$this->prenomparticipant."</li><li>E-mail: ".$this->emailparticipant."</li><li>N° de téléphone : ".$this->telparticipant."</li>";
+    public function affiche_participant(){
+        echo"<h3>".$this->nomparticipant." ".$this->prenomparticipant."</h3><ul><li>E-mail: ".$this->emailparticipant."</li><li>N° de téléphone : ".$this->telparticipant."</li></ul>";
     }
 
 }

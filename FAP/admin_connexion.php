@@ -22,7 +22,7 @@ $resultats->closeCursor();
 $nbboutique=count($tab_boutique);
 
 // Requete SQL pour recupérer les inaations sur les événements
-$requete="SELECT id_event,nomevent FROM evenement";
+$requete="SELECT id_event,nomevent,nbplace FROM evenement";
 $resultats=$connection->query($requete);
 $tab_event=$resultats->fetchAll();
 $resultats->closeCursor();
@@ -58,9 +58,13 @@ $nbevent=count($tab_event);
 				if ($tab[$login]['login']=="admin_fap_all_right"){ // On regarde quel admin est connecté est selon ces droit on lui affiche les boutons
 			// Puis on créer le bouton pour supprimer
 				echo "<a href='supp/supp_event.php?id=".$tab_event[$i]["id_event"]."'>
-				<button>Supprimer</button></a></li>" ;}
-				else{echo'</li>';}}
-				if ($tab[$login]['login']=="admin_fap_all_right"){ // Selon les droits de l'admin on lui affcihe le bouton pour ajouter des événements
+				<button>Supprimer</button></a>" ;}
+			// On regarde si l'événment propose de s'inscrire puis si c'ets le cas on demande si l'admin veut voir la liste de tout les participants
+				if ($tab_event[$i]["nbplace"]>0){
+				echo "<a href='liste_participant.php?id=".$tab_event[$i]["id_event"]."'>
+				<button>Voir Inscrits</button></a></li>" ;}}
+			// Selon les droits de l'admin on lui affcihe le bouton pour ajouter des événements
+				if ($tab[$login]['login']=="admin_fap_all_right"){ 
 			// On ajoute un bouton pour ajouter un événement a la fin de la liste des évents.
 				echo "</ul><a href='ajout/ajout_event.php'>
 				<button>Ajouter un Événement</button></a>";}
