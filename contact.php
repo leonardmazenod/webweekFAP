@@ -47,7 +47,7 @@
                         <textarea class="form-control" placeholder="Ecrivez votre message ici" id="floatingTextarea"></textarea>
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                        <button type="submit" class="btn btn-primary green">Envoyer</button>
                     </div>
                 </div>
             </form>
