@@ -25,7 +25,7 @@
     </div>
     <div class="descr_1">
         Le Festival de l’Artisanat est un événement qui valorise toutes les filières de l’artisanat en vous offrant la possibilité de découvrir 
-        ou redécouvrir des savoir-faire, des techniques et des produits et services à l’occasion d’une grande fête de l’artisanat se 
+        ou redécouvrir des savoir-faire, des techniques et des produits et services. A l’occasion d’une grande fête de l’artisanat se 
         déroulant sur 3 jours. Partez à la rencontre de près de 300 artisans dans tout le centre ville du Puy-en-Velay.
     </div>
     <div class="titre_2">
@@ -35,8 +35,8 @@
      <div class="flex-photo_1">
           <img class="jlm" src="img/artisan_petit.jpg">        
           <div class="descr_2">  
-              Sur la grande place du plot et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
-              laisse une place aux démonstrations et animations quotidienne.
+              Sur la grande place du breuil et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
+              laisse une place importante aux démonstrations et animations quotidienne.
           </div>
       </div>
  
@@ -57,7 +57,7 @@
     <div class="flex-photo_2">
         <img src="img/tonbridge.png" alt="">
         <div class="descr_4">
-            Le Puy-en-Velay est jumelé avec  plusieurs villes en Europe dont Meschede qui est une ville en allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
+            Le Puy-en-Velay est jumelé avec plusieurs villes en Europe dont Meschede qui est une ville en Allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
             Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
         </div>
      </div>
