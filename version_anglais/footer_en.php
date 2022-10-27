@@ -41,7 +41,9 @@
 
             <div class="sponsor-flex">
                 <button><a href="../admin.php">admin</a></button>
-                <a href="../index.php"><img src="../img/flagsfr.png" alt="drapeau anglais" width="48" height="32"></a>
+                <div class="langue">
+                    <p>english | </p><a href="../index.php">francais</a>
+                </div>
                 <div class="sponsor">
                     <img src="../img/Sponsor/Agglo-01.png" alt="">
                     <img src="../img/Sponsor/chambre-des-metiers-01.png" alt="">
