@@ -11,7 +11,7 @@
     <?php include '../navbar.php'; ?>
     <div class="admin">
         <h1 class="titre_3">Ajout d'un événement :</h1>
-        <form method="POST" action="ajouter/ajouter_event.php">
+        <form method="POST" action="ajouter/ajouter_event.php"  enctype='multipart/form-data'>
             <div class="row g-3">
                 <div class="col-md-6">
                     <label for="nom">Nom de l'événement : </label>
