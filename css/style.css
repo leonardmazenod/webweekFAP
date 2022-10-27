@@ -418,7 +418,7 @@ footer img {
 }
 
 .nav {
-    width: 100vw;
+    width: 98vw;
     padding: 25px 0;
     transition: .5s;
 
@@ -434,7 +434,7 @@ footer img {
 .sponsor-flex {
     display: flex;
     justify-content: space-between;
-    width: 100vw;
+    width: 98vw;
 }
 
 .sponsor-flex button:hover {
@@ -444,6 +444,23 @@ footer img {
 .sponsor-flex a{
     font-size: 14px;
     color:#94b966;
+}
+
+
+.sponsor-flex .langue {
+    display: flex;
+    margin-top: 40px;
+    text-transform: uppercase; 
+    color:white;
+    font-size: 20px;
+}
+
+.sponsor-flex .langue a {
+    text-transform: uppercase; 
+    color:white;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 4px 0 4px;
 }
 
 
