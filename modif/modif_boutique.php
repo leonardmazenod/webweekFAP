@@ -89,12 +89,7 @@ $resultats->closeCursor();
                 echo '<input type="text" name="tel" id="tel" class="form-control" required="required" value="'.$tab[9].'">';	
                 ?>
             </div>
-            <div class="col-md-4">
-            <label for="img">Image de la Boutique : </label>
-                <?php
-                echo '<input type="file" name="img" id="img" class="form-control" required="required">';	
-                ?>
-            </div>
+            
         </div>
 		<div class="col-md-4">
 			<input type="submit" class="btn btn-primary green" value="Modifier les informations de la Boutique !">
