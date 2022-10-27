@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div>
-                <input type="submit" class="btn btn-primary" value="Ajouter la Boutique !">
+                <input type="submit" class="btn btn-primary green" value="Ajouter la Boutique !">
             </div>
         </form>
         
