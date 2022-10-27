@@ -35,7 +35,7 @@
                         <a href="'.$lien.'evenement.php#artisans">Artisans</a>
                     </li>
                     <li>
-                        <a href="'.$lien.'index.php#map">Carte</a>
+                        <a href="'.$lien.'index.php#map-titre">Carte</a>
                     </li>
                     <li>
                         <a href="'.$lien.'index.php">Accueil</a>
@@ -55,6 +55,9 @@
 
             <div class="sponsor-flex">
                 <button><a href="'.$lien.'admin.php">admin</a></button>
+                <div class="langue">
+                <a href="version_anglais/index_en.php">english </a><p> | francais</p>
+                </div>
                 <div class="sponsor">
                     <img src="'.$lien.'img/Sponsor/Agglo-01.png" alt="">
                     <img src="'.$lien.'img/Sponsor/chambre-des-metiers-01.png" alt="">
