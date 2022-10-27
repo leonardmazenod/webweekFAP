@@ -517,3 +517,16 @@ footer .nav a:hover {
 .ajouter_boutique{
     padding: 20vh 5vw 37.6vw 5vw ;
 }
+/****************************** PAGE modifier_boutique ******************************/
+.modifier_boutique {
+    padding: 20vh 5vw 30.7vw 5vw ;
+}
+/****************************** PAGE modifier_event ******************************/
+.modifier_event {
+    padding: 15vh 5vw 3vw 5vw ;
+}
+
+/****************************** PAGE modifier_stand ******************************/
+.modifier_stand {
+    padding: 15vh 5vw 30.7vw 5vw ;
+}
