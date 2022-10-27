@@ -1,18 +1,29 @@
 @font-face {
     font-family: "Engage";
     src: url("../fonts/EngageRegular.otf");
+    font-weight: normal;
    }
+
+@font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation/Sansation_Regular.ttf");
+    font-weight: normal;
+   }
+
+   @font-face {
+    font-family: "Sansation";
+    src: url("../fonts/Sansation/Sansation_Bold.ttf");
+    font-weight: bold;
+   }
+
+/*********** général **********/
 
 * { 
     margin: 0;
     padding: 0;
-    font-family: Berlin Sans FB;
-    font-weight: 400;
+    font-family: Sansation;
     font-size: 20px;
 }
-
-
-/*********** général **********/
 
 body{
     background-color: #f7f1f0;
@@ -20,14 +31,16 @@ body{
 
 h1 {
     font-family: "Engage";
+    font-weight: normal;
     width: 80vw;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 h2 {
+    font-family: "Engage";
     font-size: 48px;
-    text-transform:uppercase;
     color: #617A43;
+    font-weight: normal;
 }
 
 h3 {
@@ -82,27 +95,84 @@ button:hover {
 
 * >.index {
     background-image: url(../img/fond.png);
+    background-repeat: no-repeat;
     background-size: 100vw;
 }
 
 /**********Titre**********/
 
 .titre {
-    color: #617A43;
-    padding: 170px 0 0 0;
+    color: black;
+    padding: 150px 0 0 0;
     margin: 0 5vw 0 5vw;
 }
 
 .titre h1 {
-    font-size: 7vw;
+    font-size: 8vw;
+    line-height : 210px
 }
 
-.titre button {
-    padding: 10px 40px;
-    letter-spacing: 1px;
-    font-size: 28px;
-    font-weight: 400;
-    transition: .2s;
+.flex-titre {
+    display: flex;
+}
+
+.flex-titre h1 {
+width: 60vw;
+}
+
+.aupuy {
+    width: 90vw;
+    margin: -10px 0;
+    }
+    
+
+.flex-titre .festival-desc {
+    width: 22vw;
+    margin: 60px 0 30px 0;
+    }
+
+.flex-titre .festival-desc p {
+    margin: 30px 0;
+    color:#617A43;
+    }
+
+.flex-titre .festival-desc #fleche {
+    background-color:#617a4300;
+    border: solid 2px #617A43;
+    color:#617A43;
+    padding: 11px 13px;
+    transition: .5s;
+    border-radius: 40px;
+    }
+
+.flex-titre .festival-desc #fleche:hover {
+    background-color: #617A43;
+    color: white;
+    }
+
+.iconflex {
+    display: flex;
+    align-items: center;
+}
+
+.iconflex #ensavoirplus {
+    margin: 20px;
+    color:#617A43;
+}
+
+.grosbouton {
+    background-color:#617a4300;
+    border: solid 2px #617A43;
+    color:#617A43;
+    padding: 11px 70px;
+    transition: .5s;
+    border-radius: 40px;
+    font-size: 25px;
+}
+
+.grosbouton:hover {
+    background-color: #617A43;
+    color: white;
 }
 
 .container {
@@ -110,61 +180,99 @@ button:hover {
     justify-content: space-between;
 }
 
-/*Article*/
+.btn {
+    cursor: pointer
+}
 
-.Article {
+.artisans {
+    padding: 100px 5vw 0 5vw;
+}
+
+.artisans p {
+    font-size: 30px;
+    width: 60vw;
+    padding: 30px 0 0 0;
+}
+
+
+/**********cartes********/
+
+.cartes {
     display: flex;
-    margin: 0 5vw 0 5vw;
-    flex-wrap: wrap;
+    margin: 70px 5vw 0 5vw;
 }
 
-.Article h2 {
-    margin: 100px 10vw 80px 0;
+.cartes img {
+    width: 28vw;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50% 20% / 10% 40%;
 }
 
-.Article h4 {
-    margin: 20px 0;
-    font-size: 35px;
+.cartes img:hover {
+    transform: scale(0.95);
 }
 
-.Article p {
-    font-size: 22px;
-    width: 50vw;
-    margin-bottom: 100px;
+.carte {
+    margin: 0 2vw 0 0
 }
 
-.Article button {
-    font-size: 23px;
+.sous-texte {
+    margin: 5px 80px;
 }
 
-.texte1 {
-    margin: 40px
+h4 {
+    font-size: 30px;
 }
+
+.sous-texte a {
+    color:#617A43;
+    position: relative;
+    top: 10px;
+    left: -12px;
+    padding: 5px 15px;
+}
+
+.sous-texte a::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+.sous-texte a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+.sous-texte a::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background:#617A43;
+    z-index: -1;
+    transition: transform .3s ease;
+    border-radius: 40px;
+  }
+
+.sous-texte a:hover {
+    color: white;
+    transition: .3s
+}
+
+.voirartisans {
+    padding: 60px 5vw 20px 5vw;
+}
+  
 
 /************ carousel ***********/
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
-.fap{
-    padding: 33% 0% 0% 0% ;
-    position: absolute;
-    z-index: 2;
-    text-align: center;
-    width: 50%;
-    min-width: 400px;
-    left: 50%;
-    transform: translateX(-50%);
-    letter-spacing: .3.5rem;
-    mix-blend-mode: difference;
-    color :#f7f1f0;
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 2px #333;
-    line-height: 6rem;
-    user-select: none;
-  }
  
   .swiper-container {
-    padding: 5% 0% 0% 0%;
-    width: 89.1vw;
-    height: 35vw;
+    padding: 70px 0 0 0;
+    width: 90vw;
+    height: 30vw;
   }
   .swiper-slide {
     text-align: center;
@@ -184,6 +292,18 @@ button:hover {
     -webkit-align-items: center;
     align-items: center;
   }
+
+.swiper-slide .sous-texte {
+    background-color:#f7f1f0;
+    padding: 10px 30px 20px 30px;
+    border-radius: 50% 20% / 10% 40%;
+    margin: 300px 0 0 60vw ;
+}
+
+.swiper-slide .sous-texte a:hover {
+    color: black;
+    transition: .3s
+}
   
   .swiper-pagination-bullet {
     width: 20px;
@@ -205,20 +325,16 @@ button:hover {
 .mapContainer {
     display: flex;
     height: 60vh;
-    width: 60vw;
+    width: 90vw;
     box-shadow: 5px;
     margin-top: auto;
     justify-content: center;
-    margin: 10px 5vw 100px 5vw ;
+    margin: 70px 5vw 100px 5vw ;
   }
 
 .carte-flex{
   display: flex;
 }
-
-#map-titre{
-    margin: 0 5vw 0 5vw;
-  }
 
 /****************************** PAGE NAVBAR ******************************/
 
@@ -255,6 +371,7 @@ nav ul {
 a {
     text-decoration: none;
     color: black;
+    font-weight: bold;
 }
 
 li a {
@@ -279,7 +396,7 @@ li img:hover {
     background-color: #617A43;
     color: white;
     padding: 10px 40px;
-    border-radius:6px ;
+    border-radius:40px ;
     transition: .2s;
 }
 
@@ -512,7 +629,7 @@ footer .nav a:hover {
 /****************************** PAGE ajouter_stand ******************************/
 .ajouter_stand {
     padding: 20vh 5vw 37.6vw 5vw ;
-    
+}
 /****************************** PAGE ajouter_boutique ******************************/
 .ajouter_boutique{
     padding: 20vh 5vw 37.6vw 5vw ;
