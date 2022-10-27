@@ -11,7 +11,7 @@
     <?php include '../navbar.php'; ?>
 	<div class="admin">
 		<h1 class="titre_3">Ajout d'un stand :</h1>
-		<form method="POST" action="ajouter/ajouter_stand.php">
+		<form method="POST" action="ajouter/ajouter_stand.php"  enctype='multipart/form-data'>
 		<div class="row g-3">
 			<div class="col-md-4">
 				<label for="nom">Nom du stand : </label>
