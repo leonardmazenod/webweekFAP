@@ -672,3 +672,55 @@ footer .nav a:hover {
 .supp_boutique {
     padding: 20vh 5vw 37.6vw 5vw ;
 }
+
+@media screen and (max-width:1200px) {
+    .festival-desc {
+        display: none;
+    }
+
+    .titre h1 {
+        line-height:normal;
+    }
+
+    .aupuy {
+        margin-bottom: 20px;
+    }
+
+    .festival-desc1 {
+        display:block;
+    }
+
+    .artisans {
+        padding-top:40px ;
+    }
+
+    .artisans p {
+        width: 90vw;
+        font-size: 20px;
+    }
+
+    .cartes {
+        display:block;
+    }
+
+    .cartes img {
+        width: 70vw;
+        margin: 30px;
+    }
+
+    .swiper-container {
+        height: 400px;
+    }
+
+    .swiper-slide .sous-texte {
+        margin: 27vh 0 0 60vw ;
+    }
+
+    .swiper-slide .sous-texte h4 {
+        font-size: 20px;
+    }
+
+    .swiper-slide .sous-texte p, a {
+        font-size: 14px;
+    }
+}
