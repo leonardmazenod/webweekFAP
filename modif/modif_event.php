@@ -65,12 +65,7 @@ $resultats->closeCursor();
                 echo '<input type="text" name="duree" class="form-control" required="required" value="'.$tab[7].'">';	
                 ?>
             </div>
-            <div class="col-md-4">
-            <label for="img">Image de l'Événement : </label>
-                <?php
-                echo '<input type="file" name="img" class="form-control" required="required">';	
-                ?>
-            </div>
+            
         </div>
 		<div>
 			<input type="submit" class="btn btn-primary green" value="Modifier les informations de l'Événement !">
