@@ -53,9 +53,9 @@
                 </div>
             </form>
         </div>
-    <!-- Footer -->
+    </body>
+        <!-- Footer -->
     <?php 
         include("footer.php"); 
     ?>
-    </body>
 </html>
