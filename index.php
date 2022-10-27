@@ -209,14 +209,14 @@
 			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
 			}
 
-			function boutique_marker(xcoord,ycoord,nom,horaire,duree,bouton){
+			function boutique_marker(xcoord,ycoord,nom,type,ouverture,fermeture,bouton){
 			L.marker([xcoord,ycoord], {icon: boutique}).addTo(map)
-			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
+			.bindPopup('<h4>'+nom+'</h4>Type : '+type+'<br>Ouverture : '+ouverture+'<br>Fermeture : '+fermeture+'<br><a href='+bouton+'><button>Voir plus</button></a>')
 			}
-			function stand_marker(xcoord,ycoord,nom,horaire,duree,bouton){
-			L.marker([xcoord,ycoord], {icon: stand}).addTo(map)
-			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
-			}";
+			function stand_marker(xcoord,ycoord,nom,type,ouverture,fermeture,bouton){
+            L.marker([xcoord,ycoord], {icon: stand}).addTo(map)
+            .bindPopup('<h4>'+nom+'</h4>Type : '+type+'<br>Ouverture : '+ouverture+'<br>Fermeture : '+fermeture+'<br><a href='+bouton+'><button>Voir plus</button></a>')
+            }";
 
 			$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 
