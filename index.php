@@ -186,8 +186,74 @@
                 </p>
                 </div>
                 </h1>
-                <div class="carte-flex" data-aos="fade-up"  data-aos-anchor-placement="center-bottom"><div id="map" class="mapContainer">
-                    <script src="js/carte.js"></script>
+                <div class="carte-flex" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
+			<div id="map" class="mapContainer">
+			<?php
+
+			// Script JS pour afficher la carte 
+			// On est obligé de faire le script dans le PHP car il est nécessaire que le fetch doit ce terminer aprés que l'on est affiche tous les points d'intérets
+
+			echo"<script>
+			fetch('https://france-geojson.gregoiredavid.fr/repo/regions.geojson')
+			.then((response) => response.json())
+			.then(async (json) => {
+			var map = L.map('map').setView([45.0415, 3.884], 17);
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+			var event = L.icon({iconUrl: 'img/event.png', iconSize: [20, 20], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+			var boutique = L.icon({iconUrl: 'img/boutique.png', iconSize: [20, 20], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+			var stand = L.icon({iconUrl: 'img/stand.png', iconSize: [20, 20], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+
+			function evenement_marker(xcoord,ycoord,nom,horaire,duree,bouton){
+			L.marker([xcoord,ycoord], {icon: event}).addTo(map)
+			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
+			}
+
+			function boutique_marker(xcoord,ycoord,nom,horaire,duree,bouton){
+			L.marker([xcoord,ycoord], {icon: boutique}).addTo(map)
+			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
+			}
+			function stand_marker(xcoord,ycoord,nom,horaire,duree,bouton){
+			L.marker([xcoord,ycoord], {icon: stand}).addTo(map)
+			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
+			}";
+
+			$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+
+			// Requete SQL pour recupérer les informations sur les Stands
+			$requete="SELECT nomstand,typestand,ouverturestand,fermeturestand,xcoordstand,ycoordstand FROM stand";
+			$resultats=$connection->query($requete);
+			$tab_stand=$resultats->fetchAll();
+			$resultats->closeCursor();
+			$nbstand=count($tab_stand);
+
+			// Requete SQL pour recupérer les informations sur les Boutiques
+			$requete="SELECT nomboutique,typeboutique, ouvertureboutique, fermetureboutique,xcoordboutique,ycoordboutique FROM boutique";
+			$resultats=$connection->query($requete);
+			$tab_boutique=$resultats->fetchAll();
+			$resultats->closeCursor();
+			$nbboutique=count($tab_boutique);
+
+			// Requete SQL pour recupérer les informations sur les événements
+			$requete="SELECT nomevent, dureeevent, horaireevent, xcoordevent, ycoordevent FROM evenement";
+			$resultats=$connection->query($requete);
+			$tab_event=$resultats->fetchAll();
+			$resultats->closeCursor();
+			$nbevent=count($tab_event);
+
+			for ($i=0;$i<$nbevent;$i++){
+			    echo "evenement_marker(".$tab_event[$i][3].",".$tab_event[$i][4].",'".$tab_event[$i][0]."','".$tab_event[$i][1]."','".$tab_event[$i][2]."','evenement.php#".$tab_event[$i][0]."');";
+			}
+			for ($i=0;$i<$nbboutique;$i++){
+			    echo "boutique_marker(".$tab_boutique[$i][4].",".$tab_boutique[$i][5].",'".$tab_boutique[$i][0]."','".$tab_boutique[$i][1]."','".$tab_boutique[$i][2]."','".$tab_boutique[$i][3]."','evenement.php#".$tab_boutique[$i][0]."');";
+			}
+			for ($i=0;$i<$nbstand;$i++){
+			    echo "stand_marker(".$tab_stand[$i][4].",".$tab_stand[$i][5].",'".$tab_stand[$i][0]."','".$tab_stand[$i][1]."','".$tab_stand[$i][2]."','".$tab_stand[$i][3]."','evenement.php#".$tab_stand[$i][0]."');";
+			}
+
+			echo "})
+			</script>";
+			?>
                 </div>
                 </div>
 
