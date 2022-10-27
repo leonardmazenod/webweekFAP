@@ -44,6 +44,17 @@
                     </div>
                 </div>
                 </div>
+
+                <div class="festival-desc1">
+                            <p>
+                                Le Festival de l’Artisanat est un événement qui valorise toutes les filières de l’artisanat en vous offrant la possibilité de découvrir ou redécouvrir des savoir-faire, des techniques et des produits et services à l’occasion d’une grande fête de l’artisanat se déroulant sur 3 jours. Partez à la rencontre de près de 300 artisans dans tout le centre ville du Puy-en-Velay.
+                            </p>
+                            <div class="iconflex">
+                                <a href="festival.php" id="fleche"><i class="fa-solid fa-arrow-right fa-4"></i></a>
+                                <a href="festival.php" id="ensavoirplus">en savoir plus sur le festival</a>
+                            </div>
+                        </div>
+
                 <div class="artisans"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"><h1>
                     Nos artisans
                 </h1>
