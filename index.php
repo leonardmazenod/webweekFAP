@@ -242,13 +242,13 @@
 			$nbevent=count($tab_event);
 
 			for ($i=0;$i<$nbevent;$i++){
-			    echo "evenement_marker(".$tab_event[$i][3].",".$tab_event[$i][4].",'".$tab_event[$i][0]."','".$tab_event[$i][1]."','".$tab_event[$i][2]."','evenement.php#".$tab_event[$i][0]."');";
+			    echo "evenement_marker(".$tab_event[$i][3].",".$tab_event[$i][4].",'".$tab_event[$i][0]."','".$tab_event[$i][1]."','".$tab_event[$i][2]."','evenement.php');";
 			}
 			for ($i=0;$i<$nbboutique;$i++){
-			    echo "boutique_marker(".$tab_boutique[$i][4].",".$tab_boutique[$i][5].",'".$tab_boutique[$i][0]."','".$tab_boutique[$i][1]."','".$tab_boutique[$i][2]."','".$tab_boutique[$i][3]."','evenement.php#".$tab_boutique[$i][0]."');";
+			    echo "boutique_marker(".$tab_boutique[$i][4].",".$tab_boutique[$i][5].",'".$tab_boutique[$i][0]."','".$tab_boutique[$i][1]."','".$tab_boutique[$i][2]."','".$tab_boutique[$i][3]."','evenement.php#artisans');";
 			}
 			for ($i=0;$i<$nbstand;$i++){
-			    echo "stand_marker(".$tab_stand[$i][4].",".$tab_stand[$i][5].",'".$tab_stand[$i][0]."','".$tab_stand[$i][1]."','".$tab_stand[$i][2]."','".$tab_stand[$i][3]."','evenement.php#".$tab_stand[$i][0]."');";
+			    echo "stand_marker(".$tab_stand[$i][4].",".$tab_stand[$i][5].",'".$tab_stand[$i][0]."','".$tab_stand[$i][1]."','".$tab_stand[$i][2]."','".$tab_stand[$i][3]."','evenement.php#artisans');";
 			}
 
 			echo "})
