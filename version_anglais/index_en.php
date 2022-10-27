@@ -30,7 +30,7 @@
                             </p>
                             <div class="iconflex">
                                 <a href="../festival.php" id="fleche"><i class="fa-solid fa-arrow-right fa-4"></i></a>
-                                <a href="../festival.php" id="ensavoirplus">en savoir plus sur le festival</a>
+                                <a href="../festival.php" id="ensavoirplus">find out more about the festival</a>
                             </div>
                         </div>
                     </div>
@@ -44,6 +44,17 @@
                     </div>
                 </div>
                 </div>
+
+                <div class="festival-desc1">
+                            <p>
+                                The Festival of Crafts is an event that promotes all sectors of crafts by offering you the opportunity to discover or rediscover know-how, techniques and products and services on the occasion of a great celebration of craftsmanship. Artisans taking place over 3 days. Meet nearly 300 artisans throughout the town center of Puy-en-Velay.
+                            </p>
+                            <div class="iconflex">
+                                <a href="../festival.php" id="fleche"><i class="fa-solid fa-arrow-right fa-4"></i></a>
+                                <a href="../festival.php" id="ensavoirplus">find out more about the festival</a>
+                            </div>
+                        </div>
+
                 <div class="artisans"  data-aos="fade-up" data-aos-anchor-placement="center-bottom"><h1>
                     Our artisans
                 </h1>
