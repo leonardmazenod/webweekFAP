@@ -19,8 +19,6 @@
     <?php 
         include("navbar.php"); 
     ?>
-
-    <!-- page index.php, style.css et script.js -->
 	
                 <!-- Titre -->
                 <div class="titre">
