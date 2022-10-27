@@ -73,7 +73,7 @@ $resultats->closeCursor();
             </div>
         </div>
 		<div>
-			<input type="submit" class="btn btn-primary green" value="Modifier les informations de l\'Événement !">
+			<input type="submit" class="btn btn-primary green" value="Modifier les informations de l'Événement !">
 		</div>
 	</form>
 	<form action="../admin.php">
