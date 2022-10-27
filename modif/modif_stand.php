@@ -86,12 +86,7 @@ $resultats->closeCursor();
                 echo '<input type="text" id="tel" name="emplacement" class="form-control" required="required" value="'.$tab[9].'">';	
                 ?>
             </div>
-            <div class="col-md-4">
-            <label for="img">Image du Stand : </label>
-                <?php
-                echo '<input type="file" id="img" name="img" class="form-control" required="required">';	
-                ?>
-            </div>
+            
         </div>
 		<div>
 			<input type="submit" class="btn btn-primary green" value="Modifier les informations du Stand !">
