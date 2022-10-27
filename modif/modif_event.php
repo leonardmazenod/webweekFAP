@@ -22,7 +22,7 @@ $resultats->closeCursor();
     	include '../navbar.php';
 	echo '<div class="admin"><h1 class="titre_3">Modification des informations de l\'Événement : '.$tab[1].'</h1>';
 	?>
-	<form method="POST" action="modifier/modifier_event.php">
+	<form method="POST" action="modifier/modifier_event.php"  enctype='multipart/form-data'>
 		<?php
 		echo '<input type="text" name="id" value="'.$tab[0].'" hidden>';
 		?>
