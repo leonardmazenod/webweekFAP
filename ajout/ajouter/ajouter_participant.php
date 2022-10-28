@@ -17,7 +17,7 @@ else{
   $id_event=$_POST['event'];
 }
 
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+include ('../../connection_bdd.php');
 $nom=$_POST['nom']; 
 $prenom=$_POST['prenom']; 
 $email=$_POST['email']; 

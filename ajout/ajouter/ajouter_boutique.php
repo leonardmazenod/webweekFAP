@@ -11,7 +11,7 @@
 <?php include '../../navbar.php';?>
 <div class="ajouter_event">
 <?php
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+include ('../../connection_bdd.php');
 $nomboutique=$_POST['nom']; 
 $typeboutique=$_POST['type']; 
 $xcoordboutique=$_POST['xcoord']; 
