@@ -831,7 +831,7 @@ footer .nav a:hover {
     padding: 4vw ;
   
   }
-.descr_2_4{
+  .descr_4_2{
       display: none;
   }
 .flex-photo_2{
@@ -840,6 +840,7 @@ footer .nav a:hover {
     width: 45vw;
     padding: 7.5vw 1.1vh 1.5vw 11.5vh ;
   }
+
 
 /****************************** PAGE CONTACT ******************************/
 
@@ -1036,11 +1037,12 @@ footer .nav a:hover {
     .swiper-slide .sous-texte p, a {
         font-size: 14px;
     }
-     /***** page festivale *****/
+    /* page festivale*/
     .GDtitre_1{
-        font-size: 6.7vh;
+        font-size: 6vh;
+        text-align: center;
     }
-    
+
     .titre_1{
         font-size: 6vh;
     }
@@ -1093,7 +1095,7 @@ footer .nav a:hover {
        display: none;
     }
 
-    .descr_2_4{
+    .descr_4_2{
         display: flex;
         width: 100vw;
         font-size: 4vh;
