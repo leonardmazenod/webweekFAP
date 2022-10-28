@@ -66,12 +66,12 @@
                 Le Puy-en-Velay est jumelé avec plusieurs villes en Europe dont Meschede qui est une ville en Allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
                 Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
             </div>
-            <div class="descr_2_4">  
-            Le Puy-en-Velay est jumelé avec plusieurs villes en Europe dont Meschede qui est une ville en Allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
-            Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
-          </div>
+            
     </div>
-
+<div class="descr_4_2">  
+                Le Puy-en-Velay est jumelé avec plusieurs villes en Europe dont Meschede qui est une ville en Allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
+                Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
+            </div>
      <?php 
         include("footer.php"); 
     ?>
