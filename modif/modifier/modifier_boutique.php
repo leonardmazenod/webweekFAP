@@ -23,59 +23,62 @@
 
 
     if ($_POST['nom']!=$tab[1]){
-    // Requête pour modifier le nom de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier le nom de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET nomboutique="'.$_POST['nom'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour du nom de la boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour du nom de la boutique  : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['type']!=$tab[2]){
-    // Requête pour modifier le type de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier le type de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET typeboutique="'.$_POST['type'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour du type de la boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour du type de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['xcoord']!=$tab[3]){
-    // Requête pour modifier la coord X de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier la coord X de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET xcoordboutique="'.$_POST['xcoord'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de la coordonnée X de la boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour de la coordonnée X de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['ycoord']!=$tab[4]){
-    // Requête pour modifier la coord Y de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier la coord Y de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET ycoordboutique="'.$_POST['ycoord'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de la coordonnée Y de la boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour de la coordonnée Y de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['description']!=$tab[5]){
-    // Requête pour modifier la description de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier la description de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET descriptionboutique="'.$_POST['description'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de la description de la boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour de la description de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['ouverture']!=$tab[7]){
-    // Requête pour modifier l'horaire d'ouverture de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier l'horaire d'ouverture de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET ouvertureboutique="'.$_POST['ouverture'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de la description de l'horaire d'ouverture boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour de l'horaire d'ouverture de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['fermeture']!=$tab[8]){
-    // Requête pour modifier l'horaire de fermeture de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier l'horaire de fermeture de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET fermetureboutique="'.$_POST['fermeture'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de la description de l'horaire de fermeture boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour de l'horaire de fermeture de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
     if ($_POST['tel']!=$tab[9]){
-    // Requête pour modifier l'horaire d'ouverture de la boutique dans le cas où l'admin l'a demandé //
+      $connection = mysqli_connect("localhost", "thsouvigne_fap", "tFAP43admin", "thsouvigne_fap");
+      // Requête pour modifier l'horaire d'ouverture de la boutique dans le cas où l'admin l'a demandé //
     $requete = 'UPDATE boutique SET telboutique="'.$_POST['tel'].'" WHERE id_boutique='.$id; 
     if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de la description du téléphone de la boutique est un succés </p></br>"; } 
     else { echo "<p>Echec de la mise à jour du téléphone de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
 
-    if ($_POST['img']!=$tab[9]){
-    // Requête pour modifier l'image de la boutique dans le cas où l'admin l'a demandé //
-    $requete = 'UPDATE boutique SET imgboutique="'.$_POST['img'].'" WHERE id_boutique='.$id; 
-    if (mysqli_query($connection, $requete)) { echo "<p>La mise à jour de l'image de la boutique est un succés </p></br>"; } 
-    else { echo "<p>Echec de la mise à jour de l'image de la boutique : </p>" . mysqli_error($connection)."</br>"; }}
-  
+
     ?>
     <form action="../../index.php">
       <input type="submit" class="btn btn-primary green" value="Retourner à la page d'acceuil !">
