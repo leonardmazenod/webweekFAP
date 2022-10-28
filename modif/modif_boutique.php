@@ -1,6 +1,6 @@
 <?php 
 $id=$_GET['id'];
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+include ('../connection_bdd.php');
 // Requete SQL pour recupérer les inaations sur les Boutiques
 $requete="SELECT * FROM boutique WHERE id_boutique=".$id;
 $resultats=$connection->query($requete);
