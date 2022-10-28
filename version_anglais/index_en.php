@@ -217,7 +217,7 @@ L.marker([xcoord,ycoord], {icon: stand}).addTo(map)
 .bindPopup('<h4>'+nom+'</h4>Type : '+type+'<br>Ouverture : '+ouverture+'<br>Fermeture : '+fermeture+'<br><a href='+bouton+'><button>Voir plus</button></a>')
 }";
 
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+include ('../connection_bdd.php');
 
 // Requete SQL pour recupérer les informations sur les Stands
 $requete="SELECT nomstand,typestand,ouverturestand,fermeturestand,xcoordstand,ycoordstand FROM stand";
