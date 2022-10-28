@@ -871,10 +871,23 @@ footer .nav a:hover {
     margin: 8px 0;
 }
 
+/****************************** PAGE ADMIN ******************************/
+
+.admin {
+    padding: 0vh 5vw 34vh 5vw ;
+}
+
+.admin_page_de_connexion{
+    padding:20vh 0vh 0vh 0vh;
+}
+.admin * {
+    margin: 8px 0;
+}
+
 /****************************** PAGE ADMIN CONNEXION ******************************/
 
 .admin_connexion {
-    padding: 20vh 5vw 0 5vw ;
+    padding: 0vh 5vw 0 5vw ;
 }
 
 .admin_connexion * {
@@ -956,6 +969,7 @@ footer .nav a:hover {
 .supp_boutique {
     padding: 20vh 5vw 37.6vw 5vw ;
 }
+
 
 @media screen and (max-width:1200px) {
 
