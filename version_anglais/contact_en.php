@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <!-- PAGE DE CONTACT -->
 <html lang="fr">
+<!DOCTYPE html>
+<html lang="fr">
     <head>
-        <!-- Titre de la page -->
-        <title>Contact</title>
-        <!-- Encodage -->
         <meta charset="utf-8">
+        <meta name="viewport" content=width=device-width, initial-scale=1>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Festival de l'Artisanat au Puy</title>
+        <link rel="icon" href="../img/icon.png"/>
+        <link rel="stylesheet" href="js/swiper.min.css">
+        <link rel="stylesheet" href="css/style.css"/>
+        <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
         <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
         <header>
