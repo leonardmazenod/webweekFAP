@@ -22,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
     </head>
     <body>
-        <header>    
+        <header class="navbar">    
             <!-- Navbar -->
             <nav>
                 <ul>
@@ -65,3 +65,57 @@
                 }
             })
         </script>
+
+<div class="header-holder">
+  <header class="burger">
+    
+    <div class="search-mobile" style="display: block;">
+      <a rel="nofollow">
+        <i class="icon_search"></i>
+      </a>
+    </div>
+    
+    <nav class="header-nav">
+      <div class="header-nav__inner">
+        <ul class="header-menu-list">
+        <?php
+        echo'<li>
+          <li class="header-menu-item">
+            <a href="'.$lien.'index.php">Accueil</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="'.$lien.'evenement.php">Evènements</a>
+          </li>
+          <li class="header-menu-item">
+             <a href="'.$lien.'evenement.php#artisans">Artisans</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="'.$lien.'index.php#map-titre">Carte</a>
+          </li>
+
+          <li class="header-menu-item">
+            <a href="'.$lien.'festival.php">Le festival</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="'.$lien.'contact.php">Contact</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    
+    <a href="'.$lien.'index.php" class="logo"><img src="img/logo.png" width="80px"/></a>
+    
+    <a href="#" class="device-menu">
+      <div class="device-menu__inner">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </a>'
+            ?>
+  </header>
+</div>
+
+<script src="js/menuburger.js"></script>
+
+        </body>
