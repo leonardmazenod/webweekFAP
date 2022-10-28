@@ -2,7 +2,7 @@
 
 include "class.php";
 
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+include ('connection_bdd.php');
 // Requete SQL pour recupérer les informations sur les Stands
 $requete="SELECT * FROM stand";
 $resultats=$connection->query($requete);

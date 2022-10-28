@@ -21,7 +21,7 @@
         <?php
         $id=$_GET['id'];
         include 'class.php';
-        $connection = new PDO('mysql:host=localhost;port=3306;dbname=festival','root',''); 
+        include ('connection_bdd.php');
 
         //On récupére les données de tout les participant de l'événement auquel ils ont participé.
         $requete='SELECT participant.nom_participant, participant.prenom_participant, participant.email_participant, participant.tel_participant FROM participant, va_participer WHERE participant.id_participant = va_participer.id_participant AND va_participer.id_event ='.$id;

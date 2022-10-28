@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -197,12 +198,12 @@
 			fetch('https://france-geojson.gregoiredavid.fr/repo/regions.geojson')
 			.then((response) => response.json())
 			.then(async (json) => {
-			var map = L.map('map').setView([45.0415, 3.884], 17);
+			var map = L.map('map').setView([45.0415, 3.884], 16);
 			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-			var event = L.icon({iconUrl: 'img/event.png', iconSize: [20, 20], iconAnchor: [0, 0], popupAnchor: [20, 10],});
-			var boutique = L.icon({iconUrl: 'img/boutique.png', iconSize: [20, 20], iconAnchor: [0, 0], popupAnchor: [20, 10],});
-			var stand = L.icon({iconUrl: 'img/stand.png', iconSize: [20, 20], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+			var event = L.icon({iconUrl: 'img/event.png', iconSize: [30, 30], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+			var boutique = L.icon({iconUrl: 'img/boutique.png', iconSize: [40, 40], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+			var stand = L.icon({iconUrl: 'img/stand.png', iconSize: [30, 30], iconAnchor: [0, 0], popupAnchor: [20, 10],});
 
 			function evenement_marker(xcoord,ycoord,nom,horaire,duree,bouton){
 			L.marker([xcoord,ycoord], {icon: event}).addTo(map)
@@ -218,7 +219,7 @@
             .bindPopup('<h4>'+nom+'</h4>Type : '+type+'<br>Ouverture : '+ouverture+'<br>Fermeture : '+fermeture+'<br><a href='+bouton+'><button>Voir plus</button></a>')
             }";
 
-			$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+            include ('connection_bdd.php');
 
 			// Requete SQL pour recupérer les informations sur les Stands
 			$requete="SELECT nomstand,typestand,ouverturestand,fermeturestand,xcoordstand,ycoordstand FROM stand";

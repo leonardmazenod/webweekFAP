@@ -31,20 +31,15 @@
     <div class="titre_2">
         Des démonstrations et animations quotidiennes
     </div>
-    <div class="photo">    
      <div class="flex-photo_1">
-          <img class="jlm" src="img/artisan_petit.jpg">
-          </div>        
+          <img class="jlm" src="img/artisan_petit.jpg">       
           <div class="descr_2">  
               Sur la grande place du breuil et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
               laisse une place importante aux démonstrations et animations quotidienne.
           </div>
       
     </div>
-    <div class="descr_2_2">  
-              Sur la grande place du breuil et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
-              laisse une place importante aux démonstrations et animations quotidienne.
-          </div>
+   
     <div class="titre_3">
         L’artisanat un métier d’avenir
     </div>
@@ -58,21 +53,14 @@
     <div class="titre_4">
         Les villes jumelées avec le Puy-En-Velay
     </div>
-    <div class="photo">  
         <div class="flex-photo_2">
             <img src="img/tonbridge.png" alt="">
-            </div>
             <div class="descr_4">
                 Le Puy-en-Velay est jumelé avec plusieurs villes en Europe dont Meschede qui est une ville en Allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
                 Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
             </div>
-            
-    </div>
-<div class="descr_4_2">  
-                Le Puy-en-Velay est jumelé avec plusieurs villes en Europe dont Meschede qui est une ville en Allemagne et Tonbridge-Malling qui se situe en grande bretagne. 
-                Ces deux villes vont donc aussi organiser le festival des artisans, nous aurons d’un côté le FAM (festival des artisans à Meschede) et le FAT ( festival des artisans à Tonbridge-Malling).
-            </div>
-     <?php 
+         </div>
+<?php
         include("footer.php"); 
     ?>
     </body>

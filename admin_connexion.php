@@ -1,5 +1,5 @@
 <?php
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+ include ('connection_bdd.php');
 // Requete SQL pour recupérer les inaations sur les administrateurs
 $requete="SELECT * FROM admin"; 
 $resultats=$connection->query($requete);
