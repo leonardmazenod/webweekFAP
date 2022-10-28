@@ -38,7 +38,7 @@ $nbevent=count($tab_event);
         <!-- Encodage -->
         <meta charset="utf-8">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="icon" href="img/icon.jpg">
+        <link rel="icon" href="img/icon.png">
     </head>
 
 	<body>
@@ -66,7 +66,7 @@ $nbevent=count($tab_event);
 					echo "<a href='liste_participant.php?id=".$tab_event[$i]["id_event"]."'>
 					<button>Voir Inscrits</button></a></li>" ;}}
 				// Selon les droits de l'admin on lui affcihe le bouton pour ajouter des événements
-					if ($tab[$login]['login']=="admin_fap_all_right"){ 
+					if ($tab[$login]['login']=="thibautsouvignet"){ 
 				// On ajoute un bouton pour ajouter un événement a la fin de la liste des évents.
 					echo "</ul><a href='ajout/ajout_event.php'>
 					<button>Ajouter un Événement</button></a>";}
@@ -79,11 +79,11 @@ $nbevent=count($tab_event);
 					echo "<li>".$tab_boutique[$i]["nomboutique"];
 					echo "<a href='modif/modif_boutique.php?id=".$tab_boutique[$i]["id_boutique"]."'>
 					<button>Modifier</button></a>";
-					if ($tab[$login]['login']=="admin_fap_all_right"){
+					if ($tab[$login]['login']=="thibautsouvignet"){
 					echo "<a href='supp/supp_boutique.php?id=".$tab_boutique[$i]["id_boutique"]."'>
 					<button>Supprimer</button></a></li>" ;
 					}else{echo'</li>';}}
-					if ($tab[$login]['login']=="admin_fap_all_right"){
+					if ($tab[$login]['login']=="thibautsouvignet"){
 					echo "</ul><a href='ajout/ajout_boutique.php'>
 					<button>Ajouter une Boutique</button></a>";}
 					else{echo'</ul>';}
@@ -94,11 +94,11 @@ $nbevent=count($tab_event);
 					echo "<li>".$tab_stand[$i]["nomstand"];
 					echo "<a href='modif/modif_stand.php?id=".$tab_stand[$i]["id_stand"]."'>
 					<button>Modifier</button></a>";
-					if ($tab[$login]['login']=="admin_fap_all_right"){
+					if ($tab[$login]['login']=="thibautsouvignet"){
 					echo "<a href='supp/supp_stand.php?id=".$tab_stand[$i]["id_stand"]."'>
 					<button>Supprimer</button></a></li>" ;
 					}else{echo'</li>';}}
-					if ($tab[$login]['login']=="admin_fap_all_right"){
+					if ($tab[$login]['login']=="thibautsouvignet"){
 					echo "</ul><a href='ajout/ajout_stand.php'>
 					<button>Ajouter un Stand</button></a>";}
 					else{echo'</ul>';}	
