@@ -8,14 +8,14 @@
   <title>Supprimer une Boutique</title>
 </head>
 <body>
-<?php include '../navbar.php';?>
+<?php include '../navbar.php';
+include '../connection_bdd.php';?>
  <div class="supp_boutique">
     <?php 
       $id=$_GET['id'];
-      $bdd=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
       // Requête pour supprimer la boutique que l'on a choisie ( a l'aide d'un bouton disponible sur sa page admin)//
       $requete='DELETE FROM boutique WHERE id_boutique='.$id; 
-      $resultats = $bdd->query($requete) ;
+      $resultats = $connection->query($requete) ;
 
       if ($resultats==true){
         echo "<p>La boutique a bien été supprimé de la base de donnée du site. </p>";

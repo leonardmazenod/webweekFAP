@@ -8,14 +8,14 @@
     <title>Supprimer un Stand</title>
   </head>
   <body>
-    <?php include '../navbar.php'; ?>
+    <?php include '../navbar.php'; 
+    include '../connection_bdd.php';?>
     <div class="supp_stand">
       <?php
         $id=$_GET['id'];
-        $bdd=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
         // Requête pour supprimer le stand que l'on a choisie ( a l'aide d'un bouton disponible sur sa page admin)//
         $requete='DELETE FROM stand WHERE id_stand='.$id; 
-        $resultats = $bdd->query($requete) ;
+        $resultats = $connection->query($requete) ;
 
         if ($resultats==true){
           echo "<p>Le stand a bien été supprimé de la base de donnée du site.</p>";
