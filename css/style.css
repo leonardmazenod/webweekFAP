@@ -1006,4 +1006,74 @@ footer .nav a:hover {
     .swiper-slide .sous-texte p, a {
         font-size: 14px;
     }
+     /***** page festivale *****/
+    .GDtitre_1{
+        font-size: 6.7vh;
+    }
+    
+    .titre_1{
+        font-size: 6vh;
+    }
+
+    .descr_1{
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .titre_2{
+        font-size: 6vh;
+    }
+
+    .descr_2{
+        font-size: 4vh;
+       display: none;
+    }
+
+    .descr_2_2{
+        display: flex;
+        width: 100vw;
+        font-size: 4vh;
+        text-align: center;
+        padding: 4vw ;
+    }
+
+    .flex-photo_1{
+        width: 100vw;
+        padding: 1.5vw 1vh 1.5vw 25vh ;
+    }
+
+    .titre_3{
+        font-size: 6vh;
+    }
+
+    .descr_3{
+        display: flex;
+        width: 100vw;
+        font-size: 4vh;
+        text-align: center;
+        padding: 4vw ;
+    }
+
+    .titre_4{
+        font-size: 6vh;
+    }
+    
+    .descr_4{
+        font-size: 4vh;
+       display: none;
+    }
+
+    .descr_2_4{
+        display: flex;
+        width: 100vw;
+        font-size: 4vh;
+        text-align: center;
+        padding: 4vw ;
+    }
+
+    .flex-photo_2{
+        width: 100vw;
+        padding: 1.5vw 1vh 1.5vw 25vh ;
+    }
+
 }
