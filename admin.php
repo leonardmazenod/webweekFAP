@@ -27,6 +27,7 @@ $nbadmin=count($tab);
         </header>
 
         <div class="admin">
+            <div class="admin_page_de_connexion">
             <!-- titre du formulaire -->
             <h1>Compte Administrateur</h1>
             <!-- Formulaire -->
@@ -60,6 +61,7 @@ $nbadmin=count($tab);
                     </div>
                 </div>
             </form>
+                </div>
         </div>
         <!-- Footer -->
         <?php 
