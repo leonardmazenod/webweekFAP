@@ -36,7 +36,7 @@
           <img class="jlm" src="img/artisan_petit.jpg">
           </div>        
           <div class="descr_2">  
-              Sur la grande place du breuil et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
+              Sur la grande place du Breuil et le Jardin Henri Vinay, seront regroupés grand nombre de stand d’artisan. Cet événement 
               laisse une place importante aux démonstrations et animations quotidienne.
           </div>
       
