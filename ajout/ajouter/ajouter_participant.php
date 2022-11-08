@@ -8,8 +8,9 @@
   <title>Ajouter un participant</title>
 </head>
 <body>
-<?php include '../../navbar.php';
-
+<?php include '../../navbar.php';?>
+<div class="ajouter_event">
+<?php
 if (isset($_GET['id'])){
   $id_event=$_GET['id'];
 }
