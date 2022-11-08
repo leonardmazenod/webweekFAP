@@ -16,15 +16,11 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body class="index">
+        <div class="error">
+        <h1 class="error_404">404</h1>
+        <div class="error_text">Nous sommes désolés, cette page est introuvable ! <br>Mais ne vous inquétez pas nos meilleurs artisants sont sur le coup !</div>
 
-    <div>désolé nous rencontrons une erreur.<div>
-    <imp src="img/404.png">
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
-    <script src="js/script.js"></script>
-
+        <a href="index.php"><button>Retourner à la page d'acceuil</button></a>
+    </div>  
     </body>
 </html>
