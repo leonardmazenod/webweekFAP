@@ -16,19 +16,19 @@
         <div class="nav">
             <ul>
                 <li>
-                    <a href="../evenemEnt.php">Evènements</a>
+                    <a href="../evenemEnt.php">Event</a>
                 </li>
                 <li>
-                    <a href="../evenement.php#ARTISANATS">Artisans</a>
+                    <a href="../evenement.php#ARTISANATS">Craftsmen</a>
                 </li>
                 <li>
-                    <a href="index_en.php#map-titre">Carte</a>
+                    <a href="index_en.php#map-titre">Map</a>
                 </li>
                 <li>
-                    <a href="index_en.php">Accueil</a>
+                    <a href="index_en.php">Home</a>
                 </li>
                 <li>
-                    <a href="festival_en.php">Le festival</a>
+                    <a href="festival_en.php">The Festival</a>
                 </li>
                 <li>
                     <a href="contact_en.php">Contact</a>
