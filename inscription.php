@@ -1,13 +1,12 @@
 <?php
 $id=$_GET['id'];
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
+include ('connection_bdd.php');
 // Requete SQL pour recupérer les informations sur l'événement voulu
 $requete="SELECT nomevent FROM evenement WHERE id_event=$id";
 $resultats=$connection->query($requete);
 $tab_event=$resultats->fetch();
 $resultats->closeCursor();
 
-$connection=new PDO('mysql:host=localhost;port=3306;dbname=festival','root','');
 // Requete SQL pour recupérer les informations sur les événements où l'on peut s'incrire
 $requete="SELECT * FROM evenement WHERE nbplace>0";
 $resultats=$connection->query($requete);

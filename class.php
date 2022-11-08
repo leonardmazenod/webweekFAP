@@ -90,10 +90,10 @@ Class Evenement extends Atelier{
     public function affiche_event($object){
         echo"<h3>".$this->nom.": </h3><ul><li>Description : ".$this->description."</li><li>Début : ".$this->duree."</li><li>Durée : ".$this->debutevent."</li></ul><img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."' height=200px width=auto>";
         if ($this->nbplace>0){
-            echo "<a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a><a> Place restante : ".$this->nbplace-$object."</a>";
+            echo "<br><a href='inscription.php?id=".$this->id."'><button>S'incrire</button></a><br><a> Total de places : ".$this->nbplace."</a><br><a>Nombre de participants inscrit : ".$object."</a>";
         }
         else{
-            echo "Il n'y a pas besoin de s'inscrire pour assister à cet événement. (Il ce peut aussi qu'il n'y est plus de place pour cette événement)";
+            echo "<br><a>Il n'y a pas besoin de s'inscrire pour assister à cet événement. (Il ce peut aussi qu'il n'y est plus de place pour cette événement)</a>";
         }
     }
 

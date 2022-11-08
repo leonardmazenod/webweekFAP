@@ -199,9 +199,9 @@ fetch('https://france-geojson.gregoiredavid.fr/repo/regions.geojson')
 var map = L.map('map').setView([45.0415, 3.884], 16);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-var event = L.icon({iconUrl: 'img/event.png', iconSize: [35, 35], iconAnchor: [0, 0], popupAnchor: [20, 10],});
-var boutique = L.icon({iconUrl: 'img/boutique.png', iconSize: [35, 35], iconAnchor: [0, 0], popupAnchor: [20, 10],});
-var stand = L.icon({iconUrl: 'img/stand.png', iconSize: [35, 35], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+var event = L.icon({iconUrl: '../img/event.png', iconSize: [35, 35], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+var boutique = L.icon({iconUrl: '../img/boutique.png', iconSize: [35, 35], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+var stand = L.icon({iconUrl: '../img/stand.png', iconSize: [35, 35], iconAnchor: [0, 0], popupAnchor: [20, 10],});
 
 function evenement_marker(xcoord,ycoord,nom,horaire,duree,bouton){
 L.marker([xcoord,ycoord], {icon: event}).addTo(map)

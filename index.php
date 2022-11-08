@@ -207,7 +207,7 @@
 
 			function evenement_marker(xcoord,ycoord,nom,horaire,duree,bouton){
 			L.marker([xcoord,ycoord], {icon: event}).addTo(map)
-			.bindPopup('<h4>'+nom+'</h4>Horaire : '+horaire+'<br>Durée : '+duree+'<br><a href='+bouton+'><button>Voir plus</button></a>')
+			.bindPopup('<h4>'+nom+'</h4>Horaire : '+duree+'<br>Durée : '+horaire+'<br><a href='+bouton+'><button>Voir plus</button></a>')
 			}
 
 			function boutique_marker(xcoord,ycoord,nom,type,ouverture,fermeture,bouton){
