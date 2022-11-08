@@ -17,7 +17,7 @@
                 include("navbar.php"); 
             ?>
         </header>
-        <div class="contact">
+        <div class="admin">
             <!-- titre du formulaire -->
             <h1>Formulaire de contact</h1>
             <!-- Formulaire -->
