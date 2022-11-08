@@ -60,10 +60,10 @@
                     Nos artisans
                 </h1>
                 <p>
-                    Vous y retrouverez des artisans en tout genre, dans le textile, la sculpture, les plantes et le bois, les bijoux et les pierres précieuses, les travailleurs du métal ou du cuire, ou encore les quelques horloger, vitrailliste et beaucoup d'autre.
+                    Vous y retrouverez des artisans en tout genre, dans le textile, la sculpture, les plantes et le bois, les bijoux et les pierres précieuses, les travailleurs du métal ou du cuir, ou encore les quelques horlogers, vitraillistes et beaucoup d'autres.
                 </p>
                 <p>
-                    Vous retrouverez parmis eux c'est quelques artisans :
+                    Vous retrouverez parmi eux ces quelques artisans :
                 </p>
                 </div>
                 <!-- Cartes -->
@@ -121,7 +121,7 @@
                     Nos évènements
                 </h1>
                 <p>
-                    Certains de nos artisans proposent de vous montrez leur savoir faire en direct, lors d'évènement ou ils pratiquent leur artisanant devant vous. Retrouvez les aux quatres coins de la ville
+                    Certains de nos artisans proposent de vous montrer leur savoir-faire en direct, lors d'évènement où ils pratiquent leurs artisanats devant vous. Retrouvez les aux quatres coins de la ville.
                 </p>
                 </div>
                 <!-- carousels-->
@@ -183,7 +183,7 @@
                     Carte
                 </h1>
                 <p>
-                    Retrouvez tous les évènements, les boutiques et les stand sur cette carte interactive.
+                    Retrouvez tous les évènements, les boutiques et les stands sur cette carte interactive.
                 </p>
                 </div>
                 </h1>
