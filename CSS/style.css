@@ -750,43 +750,51 @@ footer .nav a:hover {
 .GDtitre_1{
     display: flex;
     color: #617A43;
-    font-size: 50px;
+    font-size: 8.7vh;
     font-family: "engage";
     text-align: center;
-    padding: 170px 50px 50px 50px;
+    padding: 26.6vw 8.9vh 7.8vw 8.9vh;
 }
 .titre_1{
     display: flex;
-    padding: 50px 0px 0px 60px;
-    font-size: 45px;
+    padding: 7.8vw 0vw 0vw 10.7vh;
+    font-size: 8.05vh;
     color: #617A43;
 
 }
 .descr_1{
     display: flex ;
-    padding: 50px 100px 50px 70px ;
-    font-size: 35px;
+    padding: 7.8vw 17.8vh 7.8vw 12.5vh ;
+    font-size: 6.2vh;
     text-align: left;
 }
 .titre_2{
     display: flex;
-    width: 50vw;
-    padding: 50px 0px 0px 850px;
-    font-size: 45px;
+    text-align: center;
+    padding: 5VW;
+    font-size: 8.05vh;
     color: #617A43;
 }
-
+.photo{
+    display: flex;
+    width: 100vw;
+}
 .descr_2{
-    width: 60vw;
-    font-size: 35px;
-    text-align: right;
-    justify-content: space-around;
-    padding: 150px 100px 20px 10px ;
+    display: flex;
+    width: 55vw;
+    font-size: 6.2vh;
+    text-align: center;
+    padding: 4vw ;
   
+  }
+  .descr_2_2{
+      display: none;
   }
   .flex-photo_1{
     display: flex;
-    padding: 10px 10px 10px 70px ;
+    height: 30vw;
+    width: 45vw;
+    padding: 1.5vw 1.1vh 1.5vw 11.5vh ;
   }
 
 .flex-artisan {
@@ -795,36 +803,43 @@ footer .nav a:hover {
 }
 .titre_3{
     display: flex;
-    padding: 50px 0px 0px 60px;
-    font-size: 45px;
+    text-align: center;
+    padding: 10vw;
+    font-size: 8.05vh;
     color: #617A43;
 }
 
 .descr_3{
     display: flex ;
     padding: 50px 100px 50px 70px ;
-    font-size: 35px;
+    font-size: 6.2vh;
     text-align: left;
 }
 
 .titre_4{
     display: flex;
-    padding: 50px 0px 0px 990px;
-    font-size: 45px;
+    text-align: center;
+    padding: 3vw;
+    font-size: 8.05vh;
     color: #617A43;
 }
 .descr_4{
-    font-size: 35px;
-    text-align: right;
-    justify-content: space-around;
-    padding: 150px 100px 20px 10px ;
+    display: flex;
+    width: 55vw;
+    font-size: 6.2vh;
+    text-align: center;
+    padding: 4vw ;
   
+  }
+  .descr_4_2{
+      display: none;
   }
 .flex-photo_2{
     display: flex;
-    padding: 10px 10px 10px 70px ;
+    height: 30vw;
+    width: 45vw;
+    padding: 7.5vw 1.1vh 1.5vw 11.5vh ;
   }
-
 /****************************** PAGE CLASS ******************************/
 
 .pasdev {
