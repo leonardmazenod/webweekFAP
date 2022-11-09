@@ -189,12 +189,12 @@
                 </h1>
                 <div class="carte-flex" data-aos="fade-up"  data-aos-anchor-placement="center-bottom">
 			<div id="map" class="mapContainer">
-			<?php
 
-			// Script JS pour afficher la carte 
-			// On est obligé de faire le script dans le PHP car il est nécessaire que le fetch doit ce terminer aprés que l'on est affiche tous les points d'intérets
 
-			echo"<script>
+		    <!-- Script JS pour afficher la carte  -->
+			<!-- On est obligé de faire le script dans le PHP car il est nécessaire que le fetch doit ce terminer aprés que l'on est affiche tous les points d'intérets -->
+
+			<script>
 			fetch('https://france-geojson.gregoiredavid.fr/repo/regions.geojson')
 			.then((response) => response.json())
 			.then(async (json) => {
@@ -202,7 +202,7 @@
 			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 			var event = L.icon({iconUrl: 'img/event.png', iconSize: [30, 30], iconAnchor: [0, 0], popupAnchor: [20, 10],});
-			var boutique = L.icon({iconUrl: 'img/boutique.png', iconSize: [40, 40], iconAnchor: [0, 0], popupAnchor: [20, 10],});
+			var boutique = L.icon({iconUrl: 'img/boutique.png', iconSize: [30, 30], iconAnchor: [0, 0], popupAnchor: [20, 10],});
 			var stand = L.icon({iconUrl: 'img/stand.png', iconSize: [30, 30], iconAnchor: [0, 0], popupAnchor: [20, 10],});
 
 			function evenement_marker(xcoord,ycoord,nom,horaire,duree,bouton){
@@ -217,8 +217,8 @@
 			function stand_marker(xcoord,ycoord,nom,type,ouverture,fermeture,bouton){
             L.marker([xcoord,ycoord], {icon: stand}).addTo(map)
             .bindPopup('<h4>'+nom+'</h4>Type : '+type+'<br>Ouverture : '+ouverture+'<br>Fermeture : '+fermeture+'<br><a href='+bouton+'><button>Voir plus</button></a>')
-            }";
-
+            }
+			<?php
             include ('connection_bdd.php');
 
 			// Requete SQL pour recupérer les informations sur les Stands

@@ -111,6 +111,15 @@ $nbevent=count($tab_event);
 					}
 					Redirection()
 					</script>';}
+
+					if (!isset($_POST["password"])){
+						echo '<script> 
+						function Redirection(){
+						document.location.href="admin.php?error=2"; 
+						}
+						Redirection()
+						</script>';}
+					
 		?>
 		<div><a href='admin.php'>
 		<button>Retour</button></a></div>

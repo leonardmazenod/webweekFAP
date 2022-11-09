@@ -52,7 +52,12 @@ $nbadmin=count($tab);
 
                     <?php // Message d'erreur dans le cas ou l'on met un mauvais mot de passe
                     if (isset($_GET['error'])){ //mettre le message en rouge 
-                        echo'<div>Mot de passe incorrect</div>'; 
+                        if ($_GET['error']==1){ 
+                            echo'<div>Mot de passe incorrect</div>'; 
+                        }
+                        if ($_GET['error']==2){ 
+                            echo'<div>Connecte toi bien connard</div>'; 
+                        }
                     }
                     ?>
                     <!-- Bouton de connexion -->

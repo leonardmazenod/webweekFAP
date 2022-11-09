@@ -80,6 +80,12 @@ $nbevent=count($tab_evenement);
 			<input type="submit" class="btn btn-primary green" value="Annuler">
 			</div>
 		</form>
+		<form action="contact.php" method="POST">
+			<div>
+			<input type="hidden" name="x" value="0" >
+			<input type="submit" class="btn btn-primary green" value="Annuler mon inscription">
+			</div>
+		</form>
 	</div>
 	  <!-- Footer -->
 	  <?php include("footer.php"); ?>
