@@ -31,6 +31,9 @@ $nbevent=count($tab_event);
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="OTILEMA-WEB" />
+  <meta name="description" content=" c'est une page qui montre les evenements et les artisants, ainsi que l'heure à laquelle leurs stands seront ouvert pendant le festival " />
+  <meta name= "keywords" content= "événement,event,artisant,artiste,boutique">
   <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Evènements</title>
