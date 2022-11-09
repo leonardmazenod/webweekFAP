@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content=width=device-width, initial-scale=1>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="OTILEMA-WEB" />
+        <meta name="description" content=" ceci est la page festival cette page parle de comment va se derouler le festival ainsi que son histoire" />
+        <meta name= "keywords" content= "festival,artisanat,puy-en-velay,2023,jumelées,métier,démonstrations,animations,quotidiennes,talents">
         <title>Festival de l'Artisanat au Puy</title>
         <link rel="icon" href="img/icon.png">
         <link rel="stylesheet" href="css/style.css">
