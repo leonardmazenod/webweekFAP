@@ -6,6 +6,9 @@
         <title>Contact</title>
         <!-- Encodage -->
         <meta charset="utf-8">
+        <meta name="author" content="OTILEMA-WEB" />
+        <meta name="description" content=" cette page est utile pour nous contacter " />
+        <meta name= "keywords" content= "contact,Nom,prénom,E-mail,telephone,message">
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" href="img/icon.png"/>
