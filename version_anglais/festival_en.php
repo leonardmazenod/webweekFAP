@@ -30,12 +30,18 @@
     Daily demonstrations and entertainment
     </div>
         
+    <div class="photo">    
      <div class="flex-photo_1">
-          <img class="jlm" src="../img/artisan_petit.jpg">        
+          <img class="jlm" src="../img/artisan_petit.jpg">
+          </div>        
           <div class="descr_2">  
           On the main square of the plot and the Henri Vinay Garden, there will be a large number of craftsmen's stands. This event leaves room for demonstrations and daily entertainment.
-          </div>
-      </div>
+          </div>    
+   </div>
+
+    <div class="descr_2_2">  
+        On the main square of the plot and the Henri Vinay Garden, there will be a large number of craftsmen's stands. This event leaves room for demonstrations and daily entertainment.
+    </div>
  
     <div class="titre_3">
     Craftsmanship, a job with a future
@@ -49,12 +55,17 @@
     Towns twinned with Puy-En-Velay
     </div>
 
-    <div class="flex-photo_2">
-        <img src="../img/tonbridge.png" alt="">
-        <div class="descr_4">
-        Le Puy-en-Velay is twinned with several cities in Europe including Meschede which is a city in Germany and Tonbridge-Malling which is located in Great Britain. These two cities will therefore also organize the festival of artisans. We will have on one side, the FAM (festival of artisans in Meschede) and the FAT (festival of artisans in Tonbridge-Malling).        </div>
-     </div>
-
+    <div class="photo">  
+        <div class="flex-photo_2">
+            <img src="../img/tonbridge.png" alt="">
+            </div>
+            <div class="descr_4">
+                Le Puy-en-Velay is twinned with several cities in Europe including Meschede which is a city in Germany and Tonbridge-Malling which is located in Great Britain. These two cities will therefore also organize the festival of artisans. We will have on one side, the FAM (festival of artisans in Meschede) and the FAT (festival of artisans in Tonbridge-Malling).   
+             </div> 
+    </div>
+        <div class="descr_4_2">  
+            Le Puy-en-Velay is twinned with several cities in Europe including Meschede which is a city in Germany and Tonbridge-Malling which is located in Great Britain. These two cities will therefore also organize the festival of artisans. We will have on one side, the FAM (festival of artisans in Meschede) and the FAT (festival of artisans in Tonbridge-Malling).    
+        </div>
      <?php 
         include("footer_en.php"); 
     ?>
