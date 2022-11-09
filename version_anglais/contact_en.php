@@ -7,6 +7,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content=width=device-width, initial-scale=1>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="OTILEMA-WEB" />
+        <meta name="description" content=" this page is useful to contact us " />
+        <meta name= "keywords" content= "contact,Surname,first name,E-mail,telephone,message">
         <title>Festival de l'Artisanat au Puy</title>
         <link rel="icon" href="../img/icon.png"/>
         <link rel="stylesheet" href="js/swiper.min.css">
