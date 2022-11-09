@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content=width=device-width, initial-scale=1>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="author" content="OTILEMA-WEB" />
+	<meta name="description" content=" this is the homepage that introduces the festival" />
+	<meta name= "keywords" content= " acceuil ,festival ,fap ,crafts ,puy-en-velay ,2023,activities ,ceramicist ,tufting,jeweler ,event ,vitrailliste ,silkscreen printing ,sculpture ,wood ,map">
         <title>Festival de l'Artisanat au Puy</title>
         <link rel="icon" href="../img/icon.png"/>
         <link rel="stylesheet" href="js/swiper.min.css">
