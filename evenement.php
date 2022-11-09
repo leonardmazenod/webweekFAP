@@ -33,7 +33,7 @@ $nbevent=count($tab_event);
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/icon.png">
   <link rel="stylesheet" href="css/style.css">
-  <title>Inscription</title>
+  <title>Evènements</title>
 </head>
 <body>
 
@@ -47,7 +47,6 @@ $nbevent=count($tab_event);
 
         echo "<h1>Evènements</h1>";
 
-        echo "<h2>Liste des Événements : </h2>";
         $liste_event=array();
         for ($i=0;$i<$nbevent;$i++){
             $id_event=$tab_event[$i][0];
@@ -63,13 +62,13 @@ $nbevent=count($tab_event);
 
         echo "<h1 id='artisans'>Artisans</h1>";
 
-        echo "<h2>Liste des Boutique : </h2>";
+        echo "<h2>Liste des Boutique</h2>";
         $liste_boutique=array();
         for ($i=0;$i<$nbboutique;$i++){
             $liste_boutique[$i]=new Boutique ($tab_boutique[$i][1],$tab_boutique[$i][2],$tab_boutique[$i][3],$tab_boutique[$i][4],$tab_boutique[$i][5],$tab_boutique[$i][6],$tab_boutique[$i][7],$tab_boutique[$i][8],$tab_boutique[$i][9]);
             $liste_boutique[$i]->affiche_boutique();
         }
-        echo "<h2>Liste des Stands : </h2>";
+        echo "<h2>Liste des Stands</h2>";
         $liste_stand=array();
         for ($i=0;$i<$nbstand;$i++){
             $liste_stand[$i]=new Stand ($tab_stand[$i][1],$tab_stand[$i][2],$tab_stand[$i][3],$tab_stand[$i][4],$tab_stand[$i][5],$tab_stand[$i][6],$tab_stand[$i][7],$tab_stand[$i][8],$tab_stand[$i][9]);
@@ -82,3 +81,5 @@ $nbevent=count($tab_event);
 //footer
     include("footer.php"); 
 ?>
+
+    </body>
