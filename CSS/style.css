@@ -917,6 +917,28 @@ footer .nav a:hover {
 .evenement div {
     margin: 20px 0px;
 }
+
+/****************************** PAGE CLASS ******************************/
+
+.flexarticle {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.flexarticle .articletexte {
+    margin: 0 20px;
+    width: 50vw;
+}
+
+.flexarticle img {
+    width: 40vw;
+    height: auto;
+}
+
+.flexarticle a {
+    font-size: 16px;
+}
+
 /****************************** PAGE INSCRIPTION ******************************/
 
 .page-inscription {
@@ -961,6 +983,8 @@ footer .nav a:hover {
 .supp_boutique {
     padding: 20vh 5vw 37.6vw 5vw ;
 }
+
+/****************************** responsive ******************************/
 
 @media screen and (max-width:1200px) {
 
