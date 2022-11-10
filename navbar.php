@@ -1,5 +1,6 @@
 <?php
   if (!isset($title)) $title = "Festival de l'Artisanat du Puy";
+  if (!isset($description)) $description = "cette page vous renseigne sur l'évènement du Festival de l'Artisanat du Puy-en-Velay";
   if (!isset($bootstrap)) $bootstrap = false;
 ?>
 
@@ -7,6 +8,9 @@
 <html lang="fr">
   <head>
       <meta charset="utf-8">
+      <meta name="author" content="OTILEMA-WEB" />
+      <meta name="description" content="<?php echo $description; ?>" />
+      <meta name= "keywords" content= "festival,artisan,artisanat,evenement,art,spectacle">
       <meta name="viewport" content=width=device-width, initial-scale=1>
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <title><?php echo $title; ?></title>
