@@ -21,8 +21,7 @@
                 <a href="<?php echo $lien; ?>version_anglais/index_en.php">english </a><p> | francais</p>
             </div>
             <div class="mention-map">
-                <a href="<?php echo $lien; ?>cgu.php">mentions légales | </a>
-                <a href="<?php echo $lien; ?>">sitemap</a>
+                <a href="<?php echo $lien; ?>cgu.php">mentions légales</a>
             </div>
         </div>
 
