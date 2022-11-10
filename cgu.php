@@ -1,21 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content=width=device-width, initial-scale=1>
-        <meta name="description" content="Cette page est une page de mentions legales et de conditions générale d'utilisation"/>
-        <meta name="keywords" content="mentions, legales, conditions, utilisation, fap, festival, artisanat"/>
-        <meta name="author" content="Otiléma-web"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>CGU / Mentions Légales</title>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="icon" href="img/icon.png"/>
-    </head>
-    <body>
-        <!-- Navbar -->
-        <?php 
-            include("navbar.php"); 
-        ?>
+<?php 
+    $title="conditions générales";
+    include("navbar.php"); 
+?>
+    <div class="allpage">
         <h1>Conditions générales d'utilisation du site fap.mmi-lepuy.fr</h1>
         <div>
             <h2>ARTICLE 1 : Objet</h2>
@@ -93,9 +80,6 @@
                 En cas de litige non résolu à l’amiable entre l’Utilisateur et l’Éditeur, les tribunaux de Le-Puy-En-Velay sont compétents pour régler le contentieux.
             </p>
         </div>
+    </div>
             <!-- Footer -->
-    <?php 
-        include("footer.php"); 
-    ?>
-    </body>
-</html>
+    <?php include("footer.php"); ?>
