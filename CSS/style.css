@@ -699,36 +699,40 @@ footer img {
     align-items: center;
 }
 
-.sponsor-flex {
+.footer-flex {
     display: flex;
     justify-content: space-between;
     width: 98vw;
 }
 
-.sponsor-flex button:hover {
+.footer-flex button:hover {
     background-color: #617A43;
 }
 
-.sponsor-flex a{
+.footer-flex a{
     font-size: 14px;
     color:#94b966;
 }
 
 
-.sponsor-flex .langue {
+.footer-flex .langue {
     display: flex;
-    margin-top: 40px;
+    margin : 40px 20px 0 0;
     text-transform: uppercase; 
     color:white;
     font-size: 20px;
 }
 
-.sponsor-flex .langue a {
+.footer-flex .langue a {
     text-transform: uppercase; 
     color:white;
     font-size: 20px;
     font-weight: normal;
     margin: 0 4px 0 4px;
+}
+
+.footer-flex .footer-button {
+    display: flex;
 }
 
 
@@ -744,6 +748,22 @@ footer .nav a {
 footer .nav a:hover {
     background-color: #779651;
     color: white;
+}
+
+.footer-flex  .mention-map {
+    margin : 40px 0 0 20px;
+}
+
+.footer-flex  .mention-map a {
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+/****************************** ALL PAGE ******************************/
+
+.allpage {
+    padding: 20vh 5vw 0 5vw;
 }
 
 /****************************** PAGE FESTIVAL ******************************/
@@ -869,7 +889,7 @@ footer .nav a:hover {
 /****************************** PAGE ADMIN ******************************/
 
 .admin {
-    padding: 20vh 5vw 34vh 5vw ;
+    padding: 0vh 5vw 15vh 5vw ;
 }
 
 .admin * {
@@ -981,6 +1001,19 @@ footer .nav a:hover {
 /****************************** PAGE supp_boutique ******************************/
 .supp_boutique {
     padding: 20vh 5vw 37.6vw 5vw ;
+}
+
+/****************************** PAGE ERROR 404 ******************************/
+.error {
+    padding: 12vh 5vw 5vh 5vw ;
+}
+
+.error * {
+    margin: 10px 0 10px 0;
+}
+
+.error_404 {
+    font-size: 17vw;
 }
 
 /****************************** responsive ******************************/
