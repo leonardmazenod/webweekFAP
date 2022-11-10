@@ -770,10 +770,10 @@ footer .nav a:hover {
 .GDtitre_1{
     display: flex;
     color: #617A43;
-    font-size: 8.7vh;
+    font-size: 6vh;
     font-family: "engage";
     text-align: center;
-    padding: 26.6vw 8.9vh 7.8vw 8.9vh;
+    padding: 20vH 8.9vh 7.8vw 8.9vh;
 }
 .titre_1{
     display: flex;
@@ -889,13 +889,13 @@ footer .nav a:hover {
 /****************************** PAGE ADMIN ******************************/
 
 .admin {
-    padding: 0 5vw 5vh 5vw ;
+    padding: 20vh 5vw 25vh 5vw ;
 }
 
 /****************************** PAGE ADMIN CONNEXION ******************************/
 
 .admin_connexion {
-    padding: 20vh 5vw 0 5vw ;
+    padding: 0 5vw 5vh 5vw ;
 }
 
 .admin_connexion * {
@@ -946,8 +946,14 @@ footer .nav a:hover {
     width: 50vw;
 }
 
+.flexarticle .boiteimage {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
 .flexarticle img {
-    height: 45vh;
+    height: 300px;
 }
 
 .flexarticle a {

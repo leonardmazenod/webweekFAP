@@ -74,7 +74,9 @@ Class Commerce extends Atelier{
             public function affiche_boutique(){
                 echo"
                 <div class='flexarticle'>
-                    <img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."'>
+                    <div class='boiteimage'>
+                        <img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."'>
+                    </div>
                     <div class='articletexte'>
                         <ul>
                             <li><h3>".$this->nom."</h3></li>
@@ -100,7 +102,9 @@ Class Commerce extends Atelier{
             public function affiche_stand(){
                 echo"
                 <div class='flexarticle'>
-                    <img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."'>
+                    <div class='boiteimage'>
+                        <img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."'>
+                    </div>
                     <div class='articletexte'>
                         <ul>
                             <li><h3>".$this->nom."</h3></li>
@@ -131,7 +135,9 @@ Class Commerce extends Atelier{
             public function affiche_event($object){
                 echo"
                 <div class='flexarticle'>
-                    <img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."'>
+                    <div class='boiteimage'>
+                        <img alt='image de la boutique ".$this->nom."' src='ajout/ajouter/".$this->img."'>
+                    </div>
                     <div class='articletexte'>
                     <ul>
                         <li><h3>".$this->nom."</h3></li>
