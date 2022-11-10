@@ -1,32 +1,14 @@
-
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content=width=device-width, initial-scale=1>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="author" content="OTILEMA-WEB" />
-	<meta name="description" content=" ceci est la page d'accueil qui introduit le festival" />
-	<meta name= "keywords" content= "acceuil,festival,fap,artisanat,puy-en-velay,2023,activités,céramiste,tufting,bijoutier,evenement,vitrailliste,sérigraphie,sculpture,bois,carte">
-        <title>Festival de l'Artisanat au Puy</title>
-        <link rel="icon" href="img/icon.png"/>
-        <link rel="stylesheet" href="js/swiper.min.css">
-        <link rel="stylesheet" href="css/style.css"/>
-        <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js" integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
-    <body class="index">
-    <!-- Navbar -->
-    <?php 
+ <?php 
+        $title = "Page d'accueil";
         include("navbar.php"); 
-    ?>
+?>
+
+<div class="index">
+    <!-- Navbar -->
 	
                 <!-- Titre -->
                 <div class="titre">
-                    <div class="flex-titre" data-aos="fade-up">
+                <div class="flex-titre" data-aos="fade-up">
                         <h1>Festival de l’Artisanat</h1>
                         <div class="festival-desc">
                             <p>
@@ -256,22 +238,13 @@
 			    echo "stand_marker(".$tab_stand[$i][4].",".$tab_stand[$i][5].",'".$tab_stand[$i][0]."','".$tab_stand[$i][1]."','".$tab_stand[$i][2]."','".$tab_stand[$i][3]."','evenement.php#artisans');";
 			}
 
-			?>
-			</script>
-
+            echo "})
+            </script>";
+            ?>
                 </div>
                 </div>
-
-    <!-- Footer -->
-    <?php 
-        include("footer.php"); 
-    ?>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>
-    <script src="js/script.js"></script>
-
-    </body>
-</html>
+        </div>
+        </div>
+        <?php 
+            include("footer.php"); 
+        ?>
