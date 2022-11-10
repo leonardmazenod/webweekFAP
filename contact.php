@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<!-- PAGE DE CONTACT -->
-<html lang="fr">
-    <head>
-        <!-- Titre de la page -->
-        <title>Contact</title>
-        <!-- Encodage -->
-        <meta charset="utf-8">
-        <meta name="author" content="OTILEMA-WEB" />
-        <meta name="description" content=" cette page est utile pour nous contacter " />
-        <meta name= "keywords" content= "contact,Nom,prénom,E-mail,telephone,message">
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" href="img/icon.png"/>
-    </head>
-    <body>
-        <header>
-            <!-- Navbar -->
             <?php 
+                $title="Page contact";
+                $description = "cette page est utile pour nous contacter";
+                $bootstrap=true;
                 include("navbar.php"); 
             ?>
-        </header>
-        <div class="admin">
+        <div class="allpage admin">
             <!-- titre du formulaire -->
             <?php if(isset($_POST['x'])){
                 echo'<h1>Annulation de l\'inscription</h1>
@@ -70,5 +54,3 @@
     <?php 
         include("footer.php"); 
     ?>
-    </body>
-</html>
