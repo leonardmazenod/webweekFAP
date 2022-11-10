@@ -763,7 +763,7 @@ footer .nav a:hover {
 /****************************** ALL PAGE ******************************/
 
 .allpage {
-    padding: 20vh 5vw 0 5vw;
+    padding: 20vh 5vw 5vh 5vw;
 }
 
 /****************************** PAGE FESTIVAL ******************************/
@@ -889,11 +889,7 @@ footer .nav a:hover {
 /****************************** PAGE ADMIN ******************************/
 
 .admin {
-    padding: 0vh 5vw 15vh 5vw ;
-}
-
-.admin * {
-    margin: 8px 0;
+    padding: 0 5vw 5vh 5vw ;
 }
 
 /****************************** PAGE ADMIN CONNEXION ******************************/
