@@ -1,71 +1,45 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content=width=device-width, initial-scale=1>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Festival de l'Artisanat au Puy</title>
-        <link rel="icon" href="img/icon.png">
-        <?php
-        if (file_exists("css/style.css")==1){
-            $lien="";
-        }
-        elseif (file_exists("../css/style.css")==1){
-            $lien="../";
-        }
-        elseif (file_exists("../../css/style.css")==1){
-            $lien="../../";
-        }
-        echo '<link rel="stylesheet" href="'.$lien.'css/style.css">';
-        ?>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https:/kit.fontawesome.com/37f50f5103.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.1.js"></script> 
-    </head>
-    <body>
-        <footer>
-        <!-- Navbar -->
-        <div class="nav">
-                <ul>
-                <?php
-                echo'<li>
-                        <a href="'.$lien.'evenement.php">Evènements</a>
-                    </li>
-                    <li>
-                        <a href="'.$lien.'evenement.php#artisans">Artisans</a>
-                    </li>
-                    <li>
-                        <a href="'.$lien.'index.php#map-titre">Carte</a>
-                    </li>
-                    <li>
-                        <a href="'.$lien.'index.php">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="'.$lien.'festival.php">Le festival</a>
-                    </li>
-                    <li>
-                        <a href="'.$lien.'contact.php">Contact</a>
-                    </li>
-                    <li>
-                        <a class="inscription" href="'.$lien.'inscription.php?id=0">Inscription</a>
-                    </li>
-                    
-                </ul>
-                </div>
+<footer>
+    <div class="nav">
+        <ul>
+            <li><a href="<?php echo $lien; ?>evenement.php">Evènements</a></li>
+            <li><a href="<?php echo $lien; ?>evenement.php#artisans">Artisans</a></li>
+            <li><a href="<?php echo $lien; ?>evenement.php#map-titre">Carte</a></li>
+            <li><a href="<?php echo $lien; ?>index.php">Accueil</a></li>
+            <li><a href="<?php echo $lien; ?>festival.php">Le festival</a></li>
+            <li><a href="<?php echo $lien; ?>contact.php">Contact</a></li>
+            <li><a href="<?php echo $lien; ?>inscription.php?id=0" class="inscription">Inscription</a></li>
+        </ul>
+    </div>
 
-            <div class="sponsor-flex">
-                <button><a href="'.$lien.'admin.php">admin</a></button>
-                <div class="langue">
-                <a href="version_anglais/index_en.php">english </a><p> | francais</p>
-                </div>
-                <div class="sponsor">
-                    <img src="'.$lien.'img/Sponsor/Agglo-01.png" alt="">
-                    <img src="'.$lien.'img/Sponsor/chambre-des-metiers-01.png" alt="">
-                    <img src="'.$lien.'img/Sponsor/CreditAgricole-01.png" alt="">
-                    <img src="'.$lien.'img/Sponsor/LaRegion-01.png" alt="">
-                    <img src="'.$lien.'img/Sponsor/ministere-01.png" alt="">
-                </div>
-            </div>'
-            ?>
-        </footer>
+    <div class="footer-flex">
+        <!--bouton admin-->
+        <button><a href="<?php echo $lien; ?>admin.php">admin</a></button>
+
+        <!--boutons changer de langue, mentions légale et sit map-->
+        <div class="footer-button">
+            <div class="langue">
+                <a href="<?php echo $lien; ?>version_anglais/index_en.php">english </a><p> | francais</p>
+            </div>
+            <div class="mention-map">
+                <a href="<?php echo $lien; ?>cgu.php">mentions légales | </a>
+                <a href="<?php echo $lien; ?>">sitemap</a>
+            </div>
+        </div>
+
+        <!--sponsor-->
+        <div class="sponsor">
+            <img src="<?php echo $lien; ?>img/Sponsor/Agglo-01.png" alt="">
+            <img src="<?php echo $lien; ?>img/Sponsor/chambre-des-metiers-01.png" alt="">
+            <img src="<?php echo $lien; ?>img/Sponsor/CreditAgricole-01.png" alt="">
+            <img src="<?php echo $lien; ?>img/Sponsor/LaRegion-01.png" alt="">
+            <img src="<?php echo $lien; ?>img/Sponsor/ministere-01.png" alt="">
+        </div>
+    </div>
+</footer>
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="js/script.js"></script>
+
     </body>
+</html>
